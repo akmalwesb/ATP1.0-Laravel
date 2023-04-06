@@ -110,20 +110,20 @@ Installing Laravel
 
         Crtl + Shift + ` 
 
-3. Download the Laravel installer using Composer:
-
-        composer global require laravel/installer
-
-4. Make sure to place Composer's system-wide vendor bin directory in your $PATH so the laravel executable can be located by your system. 
-
-        %USERPROFILE%\AppData\Roaming\Composer\vendor\bin
-
-5. Type this command:
-
-*"Please do not commit any changes to the .gitignore file. This file is used to exclude certain files and directories from version control and should only be modified by project maintainers. If you need to ignore additional files or directories, please consult with the project maintainers and follow the established guidelines for modifying the .gitignore file."*
+3. Type this command:
 
         git rm -rf --cached .
         git add .
+
+**"Please do not commit any changes to the .gitignore file. This file is used to exclude certain files and directories from version control and should only be modified by project maintainers. If you need to ignore additional files or directories, please consult with the project maintainers and follow the established guidelines for modifying the .gitignore file."**
+
+4. Download the Laravel installer using Composer:
+
+        composer global require laravel/installer
+
+5. Make sure to place Composer's system-wide vendor bin directory in your $PATH so the laravel executable can be located by your system. 
+
+        %USERPROFILE%\AppData\Roaming\Composer\vendor\bin
 
 6. Then, Use following command to install composer:
         
