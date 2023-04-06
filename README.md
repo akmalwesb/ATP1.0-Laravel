@@ -51,9 +51,8 @@ Milestones of milestones of milestones. In other words:
 4. Open your terminal or command prompt and navigate to the directory where you want to clone the repository.
 5. Enter the following command in your terminal or command prompt, replacing <repository-URL> with the HTTPS URL that you copied in step 5:
 
-bash
-Copy code
-git clone <repository-URL>
+		git clone <repository-URL>
+
 This will clone the repository to your local machine.
 
 Depending on the size of the repository, the cloning process may take some time. Once it is complete, you should see a message indicating that the repository has been cloned successfully.
