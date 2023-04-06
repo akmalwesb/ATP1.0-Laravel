@@ -102,7 +102,9 @@ Open Terminal in VScode
 
 3. Open the Repository that you've already clone in VSCode.
 4. Open the Terminal in VSCode or use this shortcut:
+
         Crtl + Shift + ` 
+        
 5. Type this command:
 
         git rm -rf --cached .
