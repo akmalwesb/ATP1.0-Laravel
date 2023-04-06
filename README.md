@@ -128,6 +128,12 @@ Open Terminal in VScode
         composer install
 
 7. Create new file named '.env'
+8. Copy all code from '.env.example' and paste in '.env'
+9. Stage changes and commit.
+
+        git add .
+        git commit -m "Summary Message"
+
 8. Run the following command to generate the key:
 
         php artisan key:generate
