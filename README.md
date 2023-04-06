@@ -57,7 +57,7 @@ Things that you need to install on your device:
     (https://www.apachefriends.org/download.html)
 
 
-## Milestones of milestones of milestones.
+## Milestones of milestones.
 
 Create SSH public key
 1. Open Terminal or Command Prompt on your Windows.
