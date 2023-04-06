@@ -114,6 +114,8 @@ Installing Laravel
 
         git rm -rf --cached .
         git add .
+        git commit -m "Clear Git Cache"
+        git push
 
 **"Please do not commit any changes to the .gitignore file. This file is used to exclude certain files and directories from version control and should only be modified by project maintainers. If you need to ignore additional files or directories, please consult with the project maintainers and follow the established guidelines for modifying the .gitignore file."**
 
