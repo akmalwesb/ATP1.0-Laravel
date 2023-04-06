@@ -27,6 +27,19 @@ Laravel has the most extensive and thorough [documentation](https://laravel.com/
 
 If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
 
+## About ATP Project
+
+Aviation Technology Platform (ATP) aspired to become the mothership system of the aviation industry where the platform will provide combined system and modules which comprise of:
+
+1. Dashboard
+2. Flight Operations Management
+3. Passenger Management
+4. Checks Management
+5. Flight Following/Tracking Integration
+6. Safety Management
+7. Aircraft Maintenance Management
+8. HUMS and HFDM Integration
+
 ## Getting Started With Laravel
 
 Things that you need to install on your device:
@@ -104,7 +117,7 @@ Open Terminal in VScode
 4. Open the Terminal in VSCode or use this shortcut:
 
         Crtl + Shift + ` 
-        
+
 5. Type this command:
 
         git rm -rf --cached .
