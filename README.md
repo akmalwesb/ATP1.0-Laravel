@@ -48,6 +48,7 @@ Milestones of milestones of milestones. In other words:
 Create SSH public key
 1. Open Terminal or Command Prompt on your Windows.
 2. Run the ssh-keygen command to create SSH key
+
         ssh-keygen -o -t rsa -C "yourusername@email.com"
 
 You will also be asked for a location to save the GitHub SSH keys on Windows. Again, just click enter to accept the default location, which is the .ssh folder under the user’s home directory.
