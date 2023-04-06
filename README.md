@@ -61,20 +61,6 @@ Now you can navigate to the cloned repository on your local machine and start wo
 
 That's it! You have successfully cloned a repository from GitHub and have a local copy of the repository on your machine.
 
-		git commit -am "By typing this command I am saving a collection of saved files."
-
-- This is great because now we can roll back to old versions of files without having to retype. Aka "source control".
-- However, wouldn't it be great if we could further save milestones in the cloud?
-	- Aka milestones of milestones of milestones.
-		- Github -> Git -> Save
-- Github is two things:
-	- git, in the cloud
-	- a social network around source code
-- All you need to do to push to Github:
-
-		git push origin master
-
-- Now one could "clone" that repository on another computer and not just get the latest code but the complete revision history on another computer.
 
 ## Contributing
 
