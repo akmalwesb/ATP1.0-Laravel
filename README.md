@@ -29,6 +29,20 @@ If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Lar
 
 ## Getting Started With Git and GitHub
 
+Things that you need to install on your device:
+
+- Git
+    (https://git-scm.com/download/win)
+
+- Node.js
+    (https://nodejs.org/en/download)
+
+- Composer
+    (https://getcomposer.org/download/)
+
+- XAMPP 
+    (https://www.apachefriends.org/download.html)
+
 Milestones of milestones of milestones. In other words:
 
 - Open up a text editor.
