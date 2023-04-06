@@ -103,6 +103,8 @@ Clone the repository
 
 Installing Laravel
 
+*Open Terminal in VScode*
+
 1. Download the Laravel installer using Composer:
 
         composer global require laravel/installer
@@ -110,8 +112,6 @@ Installing Laravel
 2. Make sure to place Composer's system-wide vendor bin directory in your $PATH so the laravel executable can be located by your system. 
 
         %USERPROFILE%\AppData\Roaming\Composer\vendor\bin
-
-Open Terminal in VScode
 
 3. Open the Repository that you've already clone in VSCode.
 4. Open the Terminal in VSCode or use this shortcut:
