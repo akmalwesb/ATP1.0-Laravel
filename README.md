@@ -83,13 +83,51 @@ Clone the repository
 
 		git clone <repository-URL>
 
-This will clone the repository to your local machine.
+6. This will clone the repository to your local machine.
+7. Depending on the size of the repository, the cloning process may take some time. Once it is complete, you should see a message indicating that the repository has been cloned successfully.
+8. Now you can navigate to the cloned repository on your local machine and start working on it. For this project we can use Visual Studio Code(VSCode) as our IDE.
+9. That's it! You have successfully cloned a repository from GitHub and have a local copy of the repository on your machine.
 
-Depending on the size of the repository, the cloning process may take some time. Once it is complete, you should see a message indicating that the repository has been cloned successfully.
+Installing Laravel
 
-Now you can navigate to the cloned repository on your local machine and start working on it. You can use a text editor or an integrated development environment (IDE) to edit the files in the repository.
+1. Download the Laravel installer using Composer:
 
-That's it! You have successfully cloned a repository from GitHub and have a local copy of the repository on your machine.
+        composer global require laravel/installer
+
+2. Make sure to place Composer's system-wide vendor bin directory in your $PATH so the laravel executable can be located by your system. 
+
+        %USERPROFILE%\AppData\Roaming\Composer\vendor\bin
+
+Open Terminal in VScode
+
+3. Open the Repository that you've already clone in VSCode.
+4. Open the Terminal in VSCode or use this shortcut:
+        Crtl + Shift + ` 
+5. Type this command:
+
+        git rm -rf --cached .
+        git add .
+
+6. Then, Use following command to install composer:
+        
+        composer install
+
+7. Create new file named '.env'
+8. Run the following command to generate the key:
+
+        php artisan key:generate
+
+9. By running the following command, you will be able to get all the dependencies in your node_modules folder:
+
+        npm install
+
+10. To run the project, you need to run following command in the project directory. It will compile JavaScript and Styles.
+
+        npm run dev
+
+11. To serve the application, you need to run the following command in the project directory.
+
+        php artisan serve
 
 
 ## License
