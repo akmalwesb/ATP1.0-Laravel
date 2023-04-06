@@ -43,7 +43,8 @@ Things that you need to install on your device:
 - XAMPP 
     (https://www.apachefriends.org/download.html)
 
-Milestones of milestones of milestones. In other words:
+
+## Milestones of milestones of milestones.
 
 Create SSH public key
 1. Open Terminal or Command Prompt on your Windows.
@@ -58,8 +59,8 @@ You will also be asked for a location to save the GitHub SSH keys on Windows. Ag
         PS C:\Users\Username\.ssh
 
 4. There are 2 files in .ssh folder:
-- id_rsa(private)
-- id_rsa.pub(public)
+    - id_rsa(private)
+    - id_rsa.pub(public)
 
 5. Open the SSH public key in any text editor and copy the key.
 
