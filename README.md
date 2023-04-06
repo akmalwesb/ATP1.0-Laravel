@@ -75,10 +75,10 @@ Now that you've set up your SSH key with GitHub, you can use it to authenticate 
 Clone the repository
 
 1. Click on the "Code" button, which is located near the top-right corner of the repository page.
-2. In the dropdown menu that appears, click on the "HTTPS" option to view the repository's HTTPS URL.
-3. Copy the HTTPS URL by clicking on the "Copy" button next to it.
+2. In the dropdown menu that appears, click on the "SSH" option to view the repository's SSH URL.
+3. Copy the SSH URL by clicking on the "Copy" button next to it.
 4. Open your terminal or command prompt and navigate to the directory where you want to clone the repository.
-5. Enter the following command in your terminal or command prompt, replacing <repository-URL> with the HTTPS URL that you copied in step 5:
+5. Enter the following command in your terminal or command prompt, replacing <repository-URL> with the SSH URL that you copied in step 5:
 
 		git clone <repository-URL>
 
