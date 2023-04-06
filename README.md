@@ -27,7 +27,7 @@ Laravel has the most extensive and thorough [documentation](https://laravel.com/
 
 If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
 
-## Getting Started With Git and GitHub
+## Getting Started With Laravel
 
 Things that you need to install on your device:
 
@@ -45,16 +45,22 @@ Things that you need to install on your device:
 
 Milestones of milestones of milestones. In other words:
 
-- Open up a text editor.
-- Type "Hello World".
-- Save this file.
-  - You have now created a "milestone" on your hard drive of this text.
-	- You can now retreive that milestone by double clicking it to re-open it in your text editor.
-	- This should be a concept you already understand quite well.
-- Change the contents of that file again. Add in your own text. Save it again.
-	- By saving it again you've overwritten the previous milestone.
-	- You can certainly redo the work (e.g. replacing all the text with "Hello World" and saving again) but the original work is gone otherwise.
-- Git saves milestones of milestones.
+1. Click on the "Code" button, which is located near the top-right corner of the repository page.
+2. In the dropdown menu that appears, click on the "HTTPS" option to view the repository's HTTPS URL.
+3. Copy the HTTPS URL by clicking on the "Copy" button next to it.
+4. Open your terminal or command prompt and navigate to the directory where you want to clone the repository.
+5. Enter the following command in your terminal or command prompt, replacing <repository-URL> with the HTTPS URL that you copied in step 5:
+
+bash
+Copy code
+git clone <repository-URL>
+This will clone the repository to your local machine.
+
+Depending on the size of the repository, the cloning process may take some time. Once it is complete, you should see a message indicating that the repository has been cloned successfully.
+
+Now you can navigate to the cloned repository on your local machine and start working on it. You can use a text editor or an integrated development environment (IDE) to edit the files in the repository.
+
+That's it! You have successfully cloned a repository from GitHub and have a local copy of the repository on your machine.
 
 		git commit -am "By typing this command I am saving a collection of saved files."
 
