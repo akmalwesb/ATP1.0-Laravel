@@ -45,6 +45,34 @@ Things that you need to install on your device:
 
 Milestones of milestones of milestones. In other words:
 
+Create SSH public key
+1. Open Terminal or Command Prompt on your Windows.
+2. Run the ssh-keygen command to create SSH key
+        ssh-keygen -o -t rsa -C "yourusername@email.com"
+
+You will also be asked for a location to save the GitHub SSH keys on Windows. Again, just click enter to accept the default location, which is the .ssh folder under the user’s home directory.
+
+3. The Windows GitHub SSH keys live in the .ssh folder under the current user’s home directory.
+
+        PS C:\Users\Username\.ssh
+
+4. There are 2 files in .ssh folder:
+- id_rsa(private)
+- id_rsa.pub(public)
+
+5. Open the SSH public key in any text editor and copy the key.
+
+6. Log in to your GitHub account and go to the "Settings" page.
+7. Click on "SSH and GPG keys" in the sidebar.
+8. Click the "New SSH key" button.
+9. Give your SSH key a title (such as "My Laptop" or "My Work Desktop") and paste the contents of your public key into the "Key" field.
+10. Click the "Add SSH key" button to add the key to your account.
+
+Now that you've set up your SSH key with GitHub, you can use it to authenticate with GitHub instead of entering your username and password. When you clone a repository, make sure to use the SSH URL (which starts with git@github.com:) instead of the HTTPS URL, and Git will use your SSH key to authenticate with GitHub.
+
+
+Clone the repository
+
 1. Click on the "Code" button, which is located near the top-right corner of the repository page.
 2. In the dropdown menu that appears, click on the "HTTPS" option to view the repository's HTTPS URL.
 3. Copy the HTTPS URL by clicking on the "Copy" button next to it.
