@@ -56,6 +56,11 @@ Things that you need to install on your device:
 - XAMPP 
     (https://www.apachefriends.org/download.html)
 
+-VSCode 
+    (https://code.visualstudio.com/download)
+    - Extension for Git and Github
+    - Git Graph
+
 
 ## Milestones of milestones.
 
