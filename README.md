@@ -87,20 +87,33 @@ You will also be asked for a location to save the GitHub SSH keys on Windows. Ag
 8. Click the "New SSH key" button.
 9. Give your SSH key a title (such as "My Laptop" or "My Work Desktop") and paste the contents of your public key into the "Key" field.
 10. Click the "Add SSH key" button to add the key to your account.
-11. To test ssh key working or not, type this command
+      
+Now that you've set up your SSH key with GitHub, you can use it to authenticate with GitHub instead of entering your username and password. When you clone a repository, make sure to use the SSH URL (which starts with git@github.com:) instead of the HTTPS URL, and Git will use your SSH key to authenticate with GitHub.
+
+Open Powershell or Command Prompt
+
+1. Type this command:
+
+        cd \
+
+2. configure git setting with this command:
+
+        git config --global user.email "youremail@example.com"
+        git config --global user.name "yourusername"
+
+*use email and username GitHub account*
+
+3. To test ssh key working or not, type this command
 
                 ssh -T git@github.com
 
-12. Are you sure you want to continue connecting (yes/no/[fingerprint])?
+4. Are you sure you want to continue connecting (yes/no/[fingerprint])?
 
                 yes
 
-13.  After done, it will show 
+5.  After done, it will show 
 
                 Hi Username! You've successfully authenticated, but GitHub does not provide shell access.
-
-        
-Now that you've set up your SSH key with GitHub, you can use it to authenticate with GitHub instead of entering your username and password. When you clone a repository, make sure to use the SSH URL (which starts with git@github.com:) instead of the HTTPS URL, and Git will use your SSH key to authenticate with GitHub.
 
 
 Clone the repository
