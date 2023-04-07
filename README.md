@@ -102,7 +102,7 @@ Clone the repository
 1. Click on the "Code" button, which is located near the top-right corner of the repository page.
 2. In the dropdown menu that appears, click on the "SSH" option to view the repository's SSH URL.
 3. Copy the SSH URL by clicking on the "Copy" button next to it.
-4. Open your terminal or command prompt and navigate to the directory where you want to clone the repository.
+4. Open your terminal or command prompt and navigate to the directory where you want to clone the repository. I prefer to clone into C:\xampp\htdocs 
 5. Enter the following command in your terminal or command prompt, replacing <repository-URL> with the SSH URL that you copied in step 5:
 
 		git clone <repository-URL>
