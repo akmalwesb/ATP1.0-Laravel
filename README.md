@@ -56,6 +56,11 @@ Things that you need to install on your device:
 - XAMPP 
     (https://www.apachefriends.org/download.html)
 
+-VSCode 
+    (https://code.visualstudio.com/download)
+    - Extension for Git and Github
+    - Git Graph
+
 
 ## Milestones of milestones.
 
@@ -82,7 +87,19 @@ You will also be asked for a location to save the GitHub SSH keys on Windows. Ag
 8. Click the "New SSH key" button.
 9. Give your SSH key a title (such as "My Laptop" or "My Work Desktop") and paste the contents of your public key into the "Key" field.
 10. Click the "Add SSH key" button to add the key to your account.
+11. To test ssh key working or not, type this command
 
+                ssh -T git@github.com
+
+12. Are you sure you want to continue connecting (yes/no/[fingerprint])?
+
+                yes
+
+13.  After done, it will show 
+
+                Hi Username! You've successfully authenticated, but GitHub does not provide shell access.
+
+        
 Now that you've set up your SSH key with GitHub, you can use it to authenticate with GitHub instead of entering your username and password. When you clone a repository, make sure to use the SSH URL (which starts with git@github.com:) instead of the HTTPS URL, and Git will use your SSH key to authenticate with GitHub.
 
 
@@ -91,10 +108,11 @@ Clone the repository
 1. Click on the "Code" button, which is located near the top-right corner of the repository page.
 2. In the dropdown menu that appears, click on the "SSH" option to view the repository's SSH URL.
 3. Copy the SSH URL by clicking on the "Copy" button next to it.
-4. Open your terminal or command prompt and navigate to the directory where you want to clone the repository.
+4. Open your terminal or command prompt and navigate to the directory where you want to clone the repository. I prefer to clone into C:\xampp\htdocs 
 5. Enter the following command in your terminal or command prompt, replacing <repository-URL> with the SSH URL that you copied in step 5:
 
 		git clone <repository-URL>
+
 
 6. This will clone the repository to your local machine.
 7. Depending on the size of the repository, the cloning process may take some time. Once it is complete, you should see a message indicating that the repository has been cloned successfully.
