@@ -86,11 +86,12 @@ You will also be asked for a location to save the GitHub SSH keys on Windows. Ag
 
                 ssh -T git@github.com
 
-                Are you sure you want to continue connecting (yes/no/[fingerprint])? 
+12. Are you sure you want to continue connecting (yes/no/[fingerprint])?
+
                 >> yes
 
-  12. After done, it will show 
-  
+13.  After done, it will show 
+
                 Hi Username! You've successfully authenticated, but GitHub does not provide shell access.
 
         
