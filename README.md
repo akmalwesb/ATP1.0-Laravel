@@ -88,7 +88,7 @@ You will also be asked for a location to save the GitHub SSH keys on Windows. Ag
 
 12. Are you sure you want to continue connecting (yes/no/[fingerprint])?
 
-                >> yes
+                yes
 
 13.  After done, it will show 
 
