@@ -96,6 +96,14 @@ Clone the repository
 
 		git clone <repository-URL>
 
+                        ##OR
+
+                - Open VScode
+                - Go to Source Control
+                - Click "Clone Repository"
+                - Clone from Github
+                - Select Repository
+
 6. This will clone the repository to your local machine.
 7. Depending on the size of the repository, the cloning process may take some time. Once it is complete, you should see a message indicating that the repository has been cloned successfully.
 8. Now you can navigate to the cloned repository on your local machine and start working on it. For this project we can use Visual Studio Code(VSCode) as our IDE.
