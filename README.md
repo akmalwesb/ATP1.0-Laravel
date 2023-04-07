@@ -82,7 +82,18 @@ You will also be asked for a location to save the GitHub SSH keys on Windows. Ag
 8. Click the "New SSH key" button.
 9. Give your SSH key a title (such as "My Laptop" or "My Work Desktop") and paste the contents of your public key into the "Key" field.
 10. Click the "Add SSH key" button to add the key to your account.
+11. To test ssh key working or not, type this command
 
+                ssh -T git@github.com
+
+                Are you sure you want to continue connecting (yes/no/[fingerprint])? 
+                >> yes
+
+  12. After done, it will show 
+  
+                Hi Username! You've successfully authenticated, but GitHub does not provide shell access.
+
+        
 Now that you've set up your SSH key with GitHub, you can use it to authenticate with GitHub instead of entering your username and password. When you clone a repository, make sure to use the SSH URL (which starts with git@github.com:) instead of the HTTPS URL, and Git will use your SSH key to authenticate with GitHub.
 
 
@@ -96,13 +107,6 @@ Clone the repository
 
 		git clone <repository-URL>
 
-                        ##OR
-
-                - Open VScode
-                - Go to Source Control
-                - Click "Clone Repository"
-                - Clone from Github
-                - Select Repository
 
 6. This will clone the repository to your local machine.
 7. Depending on the size of the repository, the cloning process may take some time. Once it is complete, you should see a message indicating that the repository has been cloned successfully.
