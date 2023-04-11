@@ -86,6 +86,7 @@ Route::get('/auth/login-basic', $controller_path . '\authentications\LoginBasic@
 Route::get('/auth/login-cover', $controller_path . '\authentications\LoginCover@index')->name('auth-login-cover');
 Route::get('/auth/register-front', $controller_path . '\authentications\RegisterFront@index')->name('auth-register-front');
 Route::get('/auth/register-basic', $controller_path . '\authentications\RegisterBasic@index')->name('auth-register-basic');
+
 Route::get('/auth/register-cover', $controller_path . '\authentications\RegisterCover@index')->name('auth-register-cover');
 Route::get('/auth/register-multisteps', $controller_path . '\authentications\RegisterMultiSteps@index')->name('auth-register-multisteps');
 Route::get('/auth/verify-email-front', $controller_path . '\authentications\VerifyEmailFront@index')->name('auth-verify-email-front');
@@ -194,3 +195,7 @@ Route::get('/maps/leaflet', $controller_path . '\maps\Leaflet@index')->name('map
 // laravel example
 Route::get('/laravel/user-management', [UserManagement::class, 'UserManagement'])->name('laravel-example-user-management');
 Route::resource('/user-list', UserManagement::class);
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
