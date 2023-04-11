@@ -41,8 +41,8 @@ $customizerHidden = 'customizer-hide';
             </a>
           </div>
           <!-- /Logo -->
-          <h4 class="mb-1 pt-2">Welcome to {{config('variables.templateName')}}! 👋</h4>
-          <p class="mb-4">Please sign-in to your account and start the adventure</p>
+          <h4 class="mb-1 pt-2">Welcome to Weststar Aviation!</h4> <!-- {{config('variables.templateName')}} -->
+          <br><p class="mb-4">Sign-in to your account and start the adventure</p>
 
           <form id="formAuthentication" class="mb-3" action="{{url('/')}}" method="POST">
             <div class="mb-3">
@@ -85,18 +85,22 @@ $customizerHidden = 'customizer-hide';
             <div class="divider-text">or</div>
           </div>
 
+          <p class="text-center">
+            <span>Sign-in with Microsoft</span>
+          </p>
+
           <div class="d-flex justify-content-center">
-            <a href="javascript:;" class="btn btn-icon btn-label-facebook me-3">
-              <i class="tf-icons fa-brands fa-facebook-f fs-5"></i>
+            <a href="javascript:;" class="btn btn-icon btn-label-microsoft me-3">
+              <i class="tf-icons fa-brands fa-microsoft fs-5"></i>
             </a>
 
-            <a href="javascript:;" class="btn btn-icon btn-label-google-plus me-3">
+            <!-- <a href="javascript:;" class="btn btn-icon btn-label-google-plus me-3">
               <i class="tf-icons fa-brands fa-google fs-5"></i>
             </a>
 
             <a href="javascript:;" class="btn btn-icon btn-label-twitter">
               <i class="tf-icons fa-brands fa-twitter fs-5"></i>
-            </a>
+            </a> -->
           </div>
         </div>
       </div>
