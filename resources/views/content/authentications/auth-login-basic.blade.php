@@ -36,13 +36,14 @@ $customizerHidden = 'customizer-hide';
           <!-- Logo -->
           <div class="app-brand justify-content-center mb-4 mt-2">
             <a href="{{url('/')}}" class="app-brand-link gap-2">
-              <span class="app-brand-logo demo">@include('_partials.macros',["height"=>20,"withbg"=>'fill: #fff;'])</span>
+              <span class="app-brand-logo demo">@include('_parti]\
+                ls.macros',["height"=>20,"withbg"=>'fill: #fff;'])</span>
               <span class="app-brand-text demo text-body fw-bold ms-1">{{config('variables.templateName')}}</span>
             </a>
           </div>
           <!-- /Logo -->
           <h4 class="mb-1 pt-2">Welcome to Weststar Aviation!</h4> <!-- {{config('variables.templateName')}} -->
-          <br><p class="mb-4">Sign-in to your account and start the adventure</p>
+          <br><p class="mb-4">Sign-in to your account </p>
 
           <form id="formAuthentication" class="mb-3" action="{{url('/')}}" method="POST">
             <div class="mb-3">
