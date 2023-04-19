@@ -36,6 +36,9 @@
                         </a>
                     </div>
                     <!-- /Logo -->
+
+                    <x-jet-validation-errors class="mb-4" />
+                    
                     <form id="formAuthentication" method="POST" action="{{ route('login') }}">
                         @csrf
 
