@@ -53,7 +53,8 @@
                                 </a>
                                 @endif
                             </div>
-                            <div><x-jet-input id="password" class="form-control" type="password" name="password" required autocomplete="current-password" />
+                            <div>
+                                <x-jet-input id="password" class="form-control" type="password" name="password" required autocomplete="current-password" />
                             </div>
 
                         </div>
