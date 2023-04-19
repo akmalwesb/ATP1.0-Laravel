@@ -31,8 +31,8 @@
                 <div class="card-body">
                     <!-- Logo -->
                     <div class="app-brand justify-content-center mb-4 mt-2">
-                        <a class="app-brand-link gap-2">
-                        <img src="images/atp.png" alt="ATP" height="20">
+                        <a class="app-brand-logo gap-2">
+                            <img src="images/atp.png" alt="ATP" height="20">
                         </a>
                     </div>
                     <!-- /Logo -->
@@ -70,6 +70,14 @@
                                 {{ __('Sign in') }}
                             </button>
                         </div>
+
+                        <p class="text-center">
+                            <span>New on our platform?</span>
+                            <a href="{{route('register')}}">
+                                <span>Create an account</span>
+                            </a>
+                        </p>
+
                     </form>
                 </div>
             </div>
