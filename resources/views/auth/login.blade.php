@@ -23,6 +23,7 @@
 @endsection
 
 @section('content')
+
 <div class="container-xxl">
     <div class="authentication-wrapper authentication-basic container-p-y">
         <div class="authentication-inner py-4">
@@ -32,7 +33,7 @@
                     <!-- Logo -->
                     <div class="app-brand justify-content-center mb-4 mt-2">
                         <a class="app-brand-logo gap-2">
-                            <img src="images/atp.png" alt="ATP" height="20">
+                            <img src="/assets/img/icons/brands/atp.png" alt="ATP" height="100">
                         </a>
                     </div>
                     <!-- /Logo -->
