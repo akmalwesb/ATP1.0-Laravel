@@ -8,7 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class flight_planned_general extends Model
 {
     use HasFactory;
-    protected $table = 'flight_planned_general';
+    protected $connection = 'mysqlATP';
+    protected $table = 'flights_planned_general';
     protected $fillable = [
         'Indx',
         'FlightID',
