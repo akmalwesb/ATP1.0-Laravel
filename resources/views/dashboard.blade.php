@@ -248,7 +248,9 @@
         <div class="row">
           <div class="col-12 col-md-4 d-flex flex-column align-self-end">
             <div class="d-flex gap-2 align-items-center mb-2 pb-1 flex-wrap">
-              <h1 class="mb-0">$468</h1>
+              
+              <h1 class="mb-0">{{$weekly ?? 0}}</h1>
+              
               <div class="badge rounded bg-label-success">+4.2%</div>
             </div>
             <small class="text-muted">You informed of this week compared to last week</small>
@@ -262,9 +264,9 @@
             <div class="col-12 col-sm-4">
               <div class="d-flex gap-2 align-items-center">
                 <div class="badge rounded bg-label-primary p-1"><i class="ti ti-currency-dollar ti-sm"></i></div>
-                <h6 class="mb-0">Earnings</h6>
+                <h6 class="mb-0">January</h6>
               </div>
-              <h4 class="my-2 pt-1">$545.69</h4>
+              <h4 class="my-2 pt-1">{{$first_month ?? 0}}</h4>
               <div class="progress w-75" style="height:4px">
                 <div class="progress-bar" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
@@ -272,9 +274,9 @@
             <div class="col-12 col-sm-4">
               <div class="d-flex gap-2 align-items-center">
                 <div class="badge rounded bg-label-info p-1"><i class="ti ti-chart-pie-2 ti-sm"></i></div>
-                <h6 class="mb-0">Profit</h6>
+                <h6 class="mb-0">February</h6>
               </div>
-              <h4 class="my-2 pt-1">$256.34</h4>
+              <h4 class="my-2 pt-1">{{$second_month ?? 0}}</h4>
               <div class="progress w-75" style="height:4px">
                 <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
@@ -282,9 +284,9 @@
             <div class="col-12 col-sm-4">
               <div class="d-flex gap-2 align-items-center">
                 <div class="badge rounded bg-label-danger p-1"><i class="ti ti-brand-paypal ti-sm"></i></div>
-                <h6 class="mb-0">Expense</h6>
+                <h6 class="mb-0">March</h6>
               </div>
-              <h4 class="my-2 pt-1">$74.19</h4>
+              <h4 class="my-2 pt-1">{{$third_month ?? 0}}</h4>
               <div class="progress w-75" style="height:4px">
                 <div class="progress-bar bg-danger" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
