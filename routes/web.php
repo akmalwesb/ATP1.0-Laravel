@@ -15,7 +15,16 @@ use App\Http\Controllers\laravel_example\UserManagement;
 |
 */
 
+Route::middleware([
+    'auth:sanctum',
+    config('jetstream.auth_session'),
+    'verified'
+])->group(function () {
+    Route::get('/dashboard','App\Http\Controllers\dashboard\Analytics@flight')->name('dashboard');
+});
+
 $controller_path = 'App\Http\Controllers';
+
 
 // Main Page Route
 Route::get('/', $controller_path . '\dashboard\Analytics@index')->name('dashboard-analytics');
@@ -195,12 +204,4 @@ Route::get('/maps/leaflet', $controller_path . '\maps\Leaflet@index')->name('map
 Route::get('/laravel/user-management', [UserManagement::class, 'UserManagement'])->name('laravel-example-user-management');
 Route::resource('/user-list', UserManagement::class);
 
-Route::middleware([
-    'auth:sanctum',
-    config('jetstream.auth_session'),
-    'verified'
-])->group(function () {
-    Route::get('/dashboard', function () {
-        return view('dashboard');
-    })->name('dashboard');
-});
+
