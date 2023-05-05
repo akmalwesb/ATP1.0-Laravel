@@ -1,10 +1,10 @@
 <?php
   // Variables
   return [
-    "creatorName" => "Pixinvent",
-    "creatorUrl" => "https://pixinvent.com",
-    "templateName" => "atp",
-    "templateSuffix" => "Bootstrap Admin Template",
+    "creatorName" => "Weststar Engineering Sdn Bhd",
+    "creatorUrl" => "https://weststar-engineering.com",
+    "templateName" => "",
+    "templateSuffix" => "",
     "templateVersion" => "1.0.0",
     "templateFree" => false,
     "templateDescription" => "Start your development with a Dashboard for Bootstrap 5",
