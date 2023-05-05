@@ -230,8 +230,8 @@
     <div class="card h-100">
       <div class="card-header pb-0 d-flex justify-content-between mb-lg-n4">
         <div class="card-title mb-0">
-          <h5 class="mb-0">Earning Reports</h5>
-          <small class="text-muted">Weekly Earnings Overview</small>
+          <h5 class="mb-0">Flight Planned</h5>
+          <small class="text-muted">Weekly Flight Planned Overview</small>
         </div>
         <div class="dropdown">
           <button class="btn p-0" type="button" id="earningReportsId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -251,9 +251,9 @@
               
               <h1 class="mb-0">{{$weekly ?? 0}}</h1>
               
-              <div class="badge rounded bg-label-success">+4.2%</div>
+              <!-- <div class="badge rounded bg-label-success">+4.2%</div> -->
             </div>
-            <small class="text-muted">You informed of this week compared to last week</small>
+            <small class="text-muted">You informed of this month compared to last month</small>
           </div>
           <div class="col-12 col-md-8">
             <div id="weeklyEarningReports"></div>
