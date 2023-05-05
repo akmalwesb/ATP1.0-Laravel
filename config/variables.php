@@ -1,8 +1,8 @@
 <?php
   // Variables
   return [
-    "creatorName" => "Pixinvent",
-    "creatorUrl" => "https://pixinvent.com",
+    "creatorName" => "Weststar Engineering Sdn Bhd",
+    "creatorUrl" => "https://weststar-engineering.com",
     "templateName" => "",
     "templateSuffix" => "",
     "templateVersion" => "1.0.0",
