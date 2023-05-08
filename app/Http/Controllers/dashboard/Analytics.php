@@ -6,7 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use carbon\Carbon;
 use Illuminate\Support\Facades\DB;
-use App\Models\Dashboard\flight_planned_general;
+use App\Models\Dashboard\flight_done_general;
 
 class Analytics extends Controller
 {
@@ -21,7 +21,7 @@ class Analytics extends Controller
     $currentYear = Carbon::now()->format('Y');
 
     //weekly flight schedule
-    $weekly = flight_planned_general::select('Date_Of_Flight')
+    $weekly = flight_done_general::select('Date_Of_Flight')
       // ->where('Date_Of_Flight', '2023-02-01')
       ->whereYear('Date_Of_Flight', $currentYear)
       // ->whereMonth('Date_Of_Flight', '1')
@@ -29,19 +29,19 @@ class Analytics extends Controller
       ->count();
 
       //previous month flight schedule
-    $first_month = flight_planned_general::select('Date_Of_Flight')
+    $first_month = flight_done_general::select('Date_Of_Flight')
       // ->where('Date_Of_Flight', '2023-02-01')
       ->whereYear('Date_Of_Flight', $currentYear)
       ->whereMonth('Date_Of_Flight', '1')
       ->count();
 
-    $second_month = flight_planned_general::select('Date_Of_Flight')
+    $second_month = flight_done_general::select('Date_Of_Flight')
       // ->where('Date_Of_Flight', '2023-02-01')
       ->whereYear('Date_Of_Flight', $currentYear)
       ->whereMonth('Date_Of_Flight', '2')
       ->count();
 
-    $third_month = flight_planned_general::select('Date_Of_Flight')
+    $third_month = flight_done_general::select('Date_Of_Flight')
       // ->where('Date_Of_Flight', '2023-02-01')
       ->whereYear('Date_Of_Flight', $currentYear)
       ->whereMonth('Date_Of_Flight', '3')
