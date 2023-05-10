@@ -13,14 +13,6 @@ class Analytics extends Controller
 {
   public function index()
   {
-    $daily = flight_done_general::select('Date_Of_Flight', DB::raw('count(*) as total'))
-      ->whereYear('Date_Of_Flight', [Carbon::now()->format('Y')])
-      ->whereBetween('Date_Of_Flight',['2023-02-05', '2023-02-11'])
-      // ->whereBetween('Date_Of_Flight',[Carbon::now()->startOfWeek(), Carbon::now()->endOfWeek()])
-      ->groupby('Date_Of_Flight')
-      ->get();
-
-      dd($daily);
     return redirect('/login');
   }
 
