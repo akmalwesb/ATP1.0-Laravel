@@ -264,7 +264,7 @@
             <div class="col-12 col-sm-4">
               <div class="d-flex gap-2 align-items-center">
                 <div class="badge rounded bg-label-primary p-1"><i class="ti ti-currency-dollar ti-sm"></i></div>
-                <h6 class="mb-0">January</h6>
+                <h6 class="mb-0">{{$first_month_name}}</h6>
               </div>
               <h4 class="my-2 pt-1">{{$first_month ?? 0}}</h4>
               <div class="progress w-75" style="height:4px">
@@ -274,7 +274,7 @@
             <div class="col-12 col-sm-4">
               <div class="d-flex gap-2 align-items-center">
                 <div class="badge rounded bg-label-info p-1"><i class="ti ti-chart-pie-2 ti-sm"></i></div>
-                <h6 class="mb-0">February</h6>
+                <h6 class="mb-0">{{$second_month_name}}</h6>
               </div>
               <h4 class="my-2 pt-1">{{$second_month ?? 0}}</h4>
               <div class="progress w-75" style="height:4px">
@@ -284,7 +284,7 @@
             <div class="col-12 col-sm-4">
               <div class="d-flex gap-2 align-items-center">
                 <div class="badge rounded bg-label-danger p-1"><i class="ti ti-brand-paypal ti-sm"></i></div>
-                <h6 class="mb-0">March</h6>
+                <h6 class="mb-0">{{$third_month_name}}</h6>
               </div>
               <h4 class="my-2 pt-1">{{$third_month ?? 0}}</h4>
               <div class="progress w-75" style="height:4px">
