@@ -30,7 +30,7 @@
 
 <div class="row">
   <!-- Website Analytics -->
-  <div class="col-lg-6 mb-4">
+  <!-- <div class="col-lg-6 mb-4">
     <div class="swiper-container swiper-container-horizontal swiper swiper-card-advance-bg" id="swiper-with-pagination-cards">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
@@ -158,8 +158,28 @@
       </div>
       <div class="swiper-pagination"></div>
     </div>
-  </div>
+  </div> -->
   <!--/ Website Analytics -->
+
+  <!-- Namecard -->
+    <div class="col-xl-6 col-md-6 col-12 mb-4">
+    <div class="card" style='background: linear-gradient(1deg, #03006c, rgb(255 181 97 / 70%));'>
+      <div class="card-body text-center">
+        <div class="avatar avatar-lg">
+          <div class="avatar-content">
+            <img src="assets/images/icons/bell.gif" alt="Medal Pic" />
+          </div>
+        </div>
+        <div class="card-body text-center">
+          <h2 class="mb-1 text-white">Hello Muhammad Nur Husaini👋</h2>
+          <p class="card-text m-auto w-75">
+            Welcome to <strong> Kerteh Base </strong> ! 🥳🎉
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--/ Namecard -->
 
   <!-- Sales Overview -->
   <div class="col-lg-3 col-sm-6 mb-4">
