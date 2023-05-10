@@ -760,7 +760,7 @@
   <!--/ Projects table -->
 
   <!-- Test -->
-  <div class="col-8">
+  <div class="col-8 mb-4">
     <div class="card ">
       
         <!-- Aircraft Flying Hours for Revenue & Non Revenue Flights -->
