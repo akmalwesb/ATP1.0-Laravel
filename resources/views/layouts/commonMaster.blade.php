@@ -27,7 +27,7 @@
   @include('layouts/sections/scriptsIncludes')
 </head>
 
-<body style="background-image: url('assets/img/backgrounds/weststar.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+<body>
   
 
   <!-- Layout Content -->
