@@ -835,79 +835,76 @@
   <!--/ Projects table -->
 
   <!-- Test -->
-  <div class="col-12 col-xl-8 col-sm-12 order-1 order-lg-2 mb-4 mb-lg-0">
-    <div class="card">
+  <div class="col-12 col-xl-8 col-sm-12 order-1 order-lg-2 mb-4">
+    <div class="card" style="background-color: transparent; box-shadow: none;">
 
       <!-- Aircraft Flying Hours for Revenue & Non Revenue Flights -->
-      <div class="card">
-        <div class="card-header collapsed" id="paymentOne" data-toggle="collapse" role="button" data-target="#faq-payment-one" aria-expanded="false" aria-controls="faq-payment-one">
-          <span class="lead collapse-title">Revenue &amp; Non Revenue Flying Hours</span>
-          <div class="d-flex align-items-center flex-wrap mt-sm-0 mt-1">
-          </div>
+      <div class="card mb-1">
+        <div class="card-header">
+          <div class="card-body">
           <!-- <div class="col-12 col-md-8">
             <div id="weeklyEarningReports"></div>
           </div> -->
+          </div>
         </div>
       </div>
       <!-- Aircraft Flying Hours for Revenue & Non Revenue Flights -->
 
       <!-- AIRCRAFT FLYING HOURS FOR REVENUE FLIGHTS-->
-      <div class="card">
-        <div class="card-header collapsed" id="paymentTwo" data-toggle="collapse" role="button" data-target="#faq-payment-two" aria-expanded="false" aria-controls="faq-payment-two">
-          <span class="lead collapse-title">Revenue Flying Hours</span>
-          <div class="d-flex align-items-center flex-wrap mt-sm-0 mt-1">
+      <div class="card mb-1">
+        <div class="card-header">
+          <div class="card-body">
+          <!-- <div class="col-12 col-md-8">
+            <div id="weeklyEarningReports"></div>
+          </div> -->
           </div>
-          <!--***Yang ni gadge date***
-												<div class="d-flex align-items-center flex-wrap mt-sm-0 mt-1">
-													<div class="badge badge-light-secondary">&nbsp;
-														<i class="font-small-2" data-feather="calendar"></i>&nbsp;&nbsp;
-														<span class="card-text font-small-2 mr-25 mb-0">1 - 15 Dec 2020</span>&nbsp;
-													</div>
-												</div>-->
         </div>
       </div>
       <!-- AIRCRAFT FLYING HOURS FOR REVENUE FLIGHTS-->
 
       <!--FLYING HOURS BY COMPANY-->
-      <div class="card">
-        <div class="card-header" id="paymentFour" data-toggle="collapse" role="button" data-target="#faq-payment-four" aria-expanded="false" aria-controls="faq-payment-four">
-          <span class="lead collapse-title">Companies Flying Hours</span>
-          <div class="d-flex align-items-center flex-wrap mt-sm-0 mt-1">
+      <div class="card mb-1">
+        <div class="card-header">
+          <div class="card-body">
+          <!-- <div class="col-12 col-md-8">
+            <div id="weeklyEarningReports"></div>
+          </div> -->
           </div>
         </div>
       </div>
       <!--FLYING HOURS BY COMPANY-->
 
       <!-- AIRCRAFT UTILISATION-->
-      <div class="card">
-        <div class="card-header" id="paymentThree" data-toggle="collapse" role="button" data-target="#faq-payment-three" aria-expanded="false" aria-controls="faq-payment-three">
-          <span class="lead collapse-title">Aircraft Utilisation</span>
-          <div class="d-flex align-items-center flex-wrap mt-sm-0 mt-1">
+      <div class="card mb-1">
+        <div class="card-header">
+          <div class="card-body">
+          <!-- <div class="col-12 col-md-8">
+            <div id="weeklyEarningReports"></div>
+          </div> -->
           </div>
         </div>
       </div>
       <!-- AIRCRAFT UTILISATION-->
 
       <!-- AIRCRAFT AVAILABILITY-->
-      <div class="card">
-        <div class="card-header" id="paymentFive" data-toggle="collapse" role="button" data-target="#faq-payment-five" aria-expanded="false" aria-controls="faq-payment-five">
-          <span class="lead collapse-title">Aircraft Availability</span>
-          <div class="d-flex align-items-center flex-wrap mt-sm-0 mt-1">
+      <div class="card mb-1">
+        <div class="card-header">
+          <div class="card-body">
+          <!-- <div class="col-12 col-md-8">
+            <div id="weeklyEarningReports"></div>
+          </div> -->
           </div>
-          <!--***Yg ni menu utk pilih date***
-											<div class="d-flex align-items-center mt-md-0 mt-1">
-													<i class="font-medium-2" data-feather="calendar"></i>
-													<input type="text" class="form-control flat-picker bg-transparent border-0 shadow-none" placeholder="YYYY-MM-DD" />
-												</div>-->
         </div>
       </div>
       <!-- AIRCRAFT AVAILABILITY-->
 
       <!-- AVERAGE FUEL CONSUMPTION-->
-      <div class="card">
-        <div class="card-header" id="paymentEight" data-toggle="collapse" role="button" data-target="#faq-payment-eight" aria-expanded="false" aria-controls="faq-payment-eight">
-          <span class="lead collapse-title">Average Fuel Consumption</span>
-          <div class="d-flex align-items-center flex-wrap mt-sm-0 mt-1">
+      <div class="card mb-1">
+        <div class="card-header">
+          <div class="card-body">
+          <!-- <div class="col-12 col-md-8">
+            <div id="weeklyEarningReports"></div>
+          </div> -->
           </div>
         </div>
       </div>
