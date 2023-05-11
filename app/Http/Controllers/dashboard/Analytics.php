@@ -13,7 +13,30 @@ class Analytics extends Controller
 {
   public function index()
   {
+// 
+    // $daily = flight_done_general::select('Date_Of_Flight', DB::raw('count(*) as total'), DB::raw("DAYNAME(Date_Of_Flight) as dayname"))
+    // ->whereYear('Date_Of_Flight', [Carbon::now()->format('Y')])
+    // // ->whereBetween('Date_Of_Flight',['2023-02-05', '2023-02-11'])
+    // ->whereBetween('Date_Of_Flight',[Carbon::now()->startOfWeek(), Carbon::now()->endOfWeek()])
+    // ->groupby('Date_Of_Flight')
+    // ->get();
+
+    // dd($daily);
     return redirect('/login');
+  }
+
+  public function chart()
+  {
+    $daily = flight_done_general::select('Date_Of_Flight', DB::raw('count(*) as total'), DB::raw("DAYNAME(Date_Of_Flight) as dayname"))
+    ->whereYear('Date_Of_Flight', [Carbon::now()->format('Y')])
+    // ->whereBetween('Date_Of_Flight',['2023-02-05', '2023-02-11'])
+    ->whereBetween('Date_Of_Flight',[Carbon::now()->startOfWeek(), Carbon::now()->endOfWeek()])
+    ->groupby('Date_Of_Flight')
+    ->get();
+      
+      return response()->json([
+        'data' => $daily
+      ]);
   }
 
   public function flight()
@@ -23,16 +46,18 @@ class Analytics extends Controller
     $first_month_name = Carbon::now()->subMonth(2)->format('F');
     $second_month_name = Carbon::now()->subMonth()->format('F');
     $third_month_name = Carbon::now()->format('F');
-    // $day = Carbon::tomorrow()->format('l');
+    
 
 
     //daily flight schedule
     $daily = flight_done_general::select('Date_Of_Flight', DB::raw('count(*) as total'))
     ->whereYear('Date_Of_Flight', [Carbon::now()->format('Y')])
-    // ->whereBetween('Date_Of_Flight',['2023-02-05', '2023-02-11'])
-    ->whereBetween('Date_Of_Flight',[Carbon::now()->startOfWeek(), Carbon::now()->endOfWeek()])
+    ->whereBetween('Date_Of_Flight',['2023-02-05', '2023-02-11'])
+    // ->whereBetween('Date_Of_Flight',[Carbon::now()->startOfWeek(), Carbon::now()->endOfWeek()])
     ->groupby('Date_Of_Flight')
     ->get();
+
+    // $day = Carbon::parse($daily)->format('l');
 
     //weekly flight schedule
     $weekly = flight_done_general::select('Date_Of_Flight')
@@ -66,7 +91,7 @@ class Analytics extends Controller
     return view(
       'dashboard',
       [
-        'daily'=> $daily,
+        // 'data'=> $daily,
         'first_month' => $first_month,
         'second_month' => $second_month,
         'third_month' => $third_month,
