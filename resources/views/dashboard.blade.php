@@ -160,6 +160,62 @@
     </div>
   </div> -->
   <!--/ Website Analytics -->
+  
+  <!-- Statistics Card -->
+  <div class="col-xl-8 col-md-6 col-12 mb-4">
+    <div class="card card-statistics">
+      <div class="card-header">
+        <h4 class="card-title">Flight Statistics</h4>
+        <div class="d-flex align-items-center">
+          <p class="card-text font-small-2 mr-25 mb-0">As on Thursday , 11 May 2023 </p>
+        </div>
+      </div>
+      <div class="card-body statistics-body">
+        <div class="row">
+          <div class="col-xl-4 col-sm-6 col-12 mb-2 mb-xl-0">
+            <div class="media">
+              <div class="mr-2">
+                <div class="avatar-content">
+                  <img src='assets/images/icons/icons8-clock-96.png' class='position-left' alt='' width='45' height=''>
+                </div>
+              </div>
+              <div class="media-body my-auto">
+                <h4 class="font-weight-bolder mb-0"><mark>80888:30</mark></h4>
+                <p class="card-text font-small-3 mb-0">Total AW139 Fleet Hours</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-sm-6 col-12 mb-2 mb-xl-0">
+            <div class="media">
+              <div class="mr-2">
+                <div class="avatar-content">
+                  <img src='assets/images/icons/eta.png' class='position-left' alt='' width='40' height=''>
+                </div>
+              </div>
+              <div class="media-body my-auto">
+                <h4 class="font-weight-bolder mb-0"><mark>364770</mark></h4>
+                <p class="card-text font-small-3 mb-0">Total AW139 Flight Number</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-sm-6 col-12 mb-2 mb-sm-0">
+            <div class="media">
+              <div class="mr-2">
+                <div class="avatar-content">
+                  <img src='assets/images/icons/icons8-traveler-80.png' class='position-left' alt='' width='40' height=''>
+                </div>
+              </div>
+              <div class="media-body my-auto">
+                <h4 class="font-weight-bolder mb-0"><mark>603904</mark></h4>
+                <p class="card-text font-small-3 mb-0">Total number of passenger</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--/ Statistics Card -->
 
   <!-- Namecard -->
   <div class="col-xl-6 col-sm-6 mb-4">
@@ -923,7 +979,9 @@
           enabled: true
         },
         series: [{
-          data: {!!json_encode($data->pluck('total')) !!} //fetch data from MySQL
+          data: {
+            !!json_encode($data - > pluck('total')) !!
+          } //fetch data from MySQL
         }],
         legend: {
           show: false
