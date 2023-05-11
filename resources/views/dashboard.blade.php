@@ -163,7 +163,7 @@
 
   <!-- Namecard -->
   <div class="col-xl-6 col-sm-6 mb-4">
-    <div class="card" style='background: linear-gradient(1deg, #03006c, rgb(255 181 97 / 70%));'>
+    <div class="card" style="background-image: url('assets/img/favicon/atp2.png')">
       <div class="card-header text-center">
         <div class="align-items-center">
           <img src="{{asset('assets/img/illustrations/card-website-analytics-2.png')}}" alt="Website Analytics" width="122" class="card-website-analytics-img">
@@ -171,7 +171,7 @@
       </div>
       <div class="card-body text-center">
         <h4 class="card-title mb-1 text-white">Hello Muhammad Nur Husaini👋</h4>
-        <small>Revenue Generated</small>
+        <small>Welcome to <strong> Kuala Lumpur </strong></small>
         <!-- <p class="card-text m-auto w-75">
           Welcome to <strong> Kerteh Base </strong> ! 🥳🎉
         </p> -->
