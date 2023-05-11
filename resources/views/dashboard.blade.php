@@ -640,7 +640,7 @@
   <!--/ Monthly Campaign State -->
 
   <!-- Source Visit -->
-  <div class="col-xl-4 col-md-6 order-2 order-lg-1">
+  <div class="col-xl-4 col-md-6 order-1 order-lg-1 mb-4">
     <div class="card">
       <div class="card-header d-flex justify-content-between">
         <div class="card-title mb-0">
@@ -757,7 +757,7 @@
   <!--/ Source Visit -->
 
   <!-- Projects table -->
-  <div class="col-12 col-xl-8 col-sm-12 order-1 order-lg-2 mb-4 mb-lg-0">
+  <div class="col-12 col-xl-8 col-sm-12 order-1 order-lg-2 mb-4">
     <div class="card">
       <div class="card-datatable table-responsive">
         <table class="datatables-projects table border-top">
@@ -779,8 +779,8 @@
   <!--/ Projects table -->
 
   <!-- Test -->
-  <div class="col-8 mb-4">
-    <div class="card ">
+  <div class="col-12 col-xl-8 col-sm-12 order-1 order-lg-2 mb-4 mb-lg-0">
+    <div class="card">
 
       <!-- Aircraft Flying Hours for Revenue & Non Revenue Flights -->
       <div class="card">
