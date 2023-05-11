@@ -166,7 +166,7 @@
     <div class="card" style='background: linear-gradient(1deg, #03006c, rgb(255 181 97 / 70%));'>
       <div class="card-header text-center">
         <div class="align-items-center">
-            <img src="{{asset('assets/img/illustrations/card-website-analytics-2.png')}}" alt="Website Analytics" width="122" class="card-website-analytics-img">
+          <img src="{{asset('assets/img/illustrations/card-website-analytics-2.png')}}" alt="Website Analytics" width="122" class="card-website-analytics-img">
         </div>
       </div>
       <div class="card-body text-center">
@@ -319,7 +319,7 @@
 
   <!-- Support Tracker -->
   <div class="col-md-6 mb-4">
-    <div class="card">
+    <div class="card h-100">
       <div class="card-header d-flex justify-content-between pb-0">
         <div class="card-title mb-0">
           <h5 class="mb-0">Support Tracker</h5>
@@ -376,7 +376,7 @@
   <!--/ Support Tracker -->
 
   <!-- Sales By Country -->
-  <div class="col-xl-4 col-md-6 mb-4">
+  <!-- <div class="col-xl-4 col-md-6 mb-4">
     <div class="card h-100">
       <div class="card-header d-flex justify-content-between">
         <div class="card-title mb-0">
@@ -502,7 +502,7 @@
         </ul>
       </div>
     </div>
-  </div>
+  </div> -->
   <!--/ Sales By Country -->
 
   <!-- Total Earning -->
@@ -553,7 +553,7 @@
   <!--/ Total Earning -->
 
   <!-- Monthly Campaign State -->
-  <div class="col-xl-4 col-md-6 mb-4">
+  <!-- <div class="col-xl-4 col-md-6 mb-4">
     <div class="card h-100">
       <div class="card-header d-flex justify-content-between">
         <div class="card-title mb-0">
@@ -636,11 +636,11 @@
         </ul>
       </div>
     </div>
-  </div>
+  </div> -->
   <!--/ Monthly Campaign State -->
 
   <!-- Source Visit -->
-  <div class="col-xl-4 col-md-6 order-1 order-lg-1 mb-4">
+  <!-- <div class="col-xl-4 col-md-6 order-1 order-lg-1 mb-4">
     <div class="card">
       <div class="card-header d-flex justify-content-between">
         <div class="card-title mb-0">
@@ -753,11 +753,11 @@
         </ul>
       </div>
     </div>
-  </div>
+  </div> -->
   <!--/ Source Visit -->
 
   <!-- Projects table -->
-  <div class="col-12 col-xl-8 col-sm-12 order-1 order-lg-2 mb-4">
+  <!-- <div class="col-12 col-xl-8 col-sm-12 order-1 order-lg-2 mb-4">
     <div class="card">
       <div class="card-datatable table-responsive">
         <table class="datatables-projects table border-top">
@@ -775,7 +775,7 @@
         </table>
       </div>
     </div>
-  </div>
+  </div> -->
   <!--/ Projects table -->
 
   <!-- Test -->
@@ -788,6 +788,9 @@
           <span class="lead collapse-title">Revenue &amp; Non Revenue Flying Hours</span>
           <div class="d-flex align-items-center flex-wrap mt-sm-0 mt-1">
           </div>
+          <!-- <div class="col-12 col-md-8">
+            <div id="weeklyEarningReports"></div>
+          </div> -->
         </div>
       </div>
       <!-- Aircraft Flying Hours for Revenue & Non Revenue Flights -->
@@ -920,13 +923,15 @@
           enabled: true
         },
         series: [{
-          data: {!!json_encode($data->pluck('total'))!!} //fetch data from MySQL
+          data: {
+            !!json_encode($data - > pluck('total')) !!
+          } //fetch data from MySQL
         }],
         legend: {
           show: false
         },
         xaxis: {
-          categories: ['Su','Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'],
+          categories: ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'],
           axisBorder: {
             show: false
           },
