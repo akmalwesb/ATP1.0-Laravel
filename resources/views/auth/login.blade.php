@@ -24,7 +24,7 @@
 
 @section('content')
 
-<div style="background-image: url('assets/img/backgrounds/weststar.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+<div class="container-fluid" style="background-image: url('assets/img/backgrounds/weststar.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
     <div class="authentication-wrapper authentication-basic container-p-y">
         <div class="authentication-inner py-4">
             <!-- Login jetstream -->
