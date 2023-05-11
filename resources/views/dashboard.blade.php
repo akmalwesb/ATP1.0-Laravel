@@ -923,9 +923,7 @@
           enabled: true
         },
         series: [{
-          data: {
-            !!json_encode($data - > pluck('total')) !!
-          } //fetch data from MySQL
+          data: {!!json_encode($data->pluck('total')) !!} //fetch data from MySQL
         }],
         legend: {
           show: false
