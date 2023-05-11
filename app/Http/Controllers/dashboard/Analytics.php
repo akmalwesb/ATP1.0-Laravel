@@ -29,8 +29,8 @@ class Analytics extends Controller
   {
     $daily = flight_done_general::select('Date_Of_Flight', DB::raw('count(*) as total'), DB::raw("DAYNAME(Date_Of_Flight) as dayname"))
     ->whereYear('Date_Of_Flight', [Carbon::now()->format('Y')])
-    // ->whereBetween('Date_Of_Flight',['2023-02-05', '2023-02-11'])
-    ->whereBetween('Date_Of_Flight',[Carbon::now()->startOfWeek(), Carbon::now()->endOfWeek()])
+    ->whereBetween('Date_Of_Flight',['2023-02-05', '2023-02-11'])
+    // ->whereBetween('Date_Of_Flight',[Carbon::now()->startOfWeek(), Carbon::now()->endOfWeek()])
     ->groupby('Date_Of_Flight')
     ->get();
       
@@ -91,7 +91,7 @@ class Analytics extends Controller
     return view(
       'dashboard',
       [
-        // 'data'=> $daily,
+        'data'=> $daily,
         'first_month' => $first_month,
         'second_month' => $second_month,
         'third_month' => $third_month,
