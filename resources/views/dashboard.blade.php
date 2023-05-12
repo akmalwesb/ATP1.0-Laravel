@@ -16,8 +16,7 @@
 @endsection
 
 @section('vendor-script')
-<script src="{{asset('assets/vendor/libs/swiper/swiper.js')}}">
-</script>
+<script src="{{asset('assets/vendor/libs/swiper/swiper.js')}}"></script>
 <script src="{{asset('assets/vendor/libs/apex-charts/apexcharts.js')}}"></script>
 <script src="{{asset('assets/vendor/libs/datatables-bs5/datatables-bootstrap5.js')}}"></script>
 @endsection
@@ -331,7 +330,8 @@
             <small class="text-muted">You informed of this month compared to last month</small>
           </div>
           <div class="col-12 col-md-8">
-            <div id="flightReport"></div>
+            <div id="flightReport" data-flight-data="<?php echo json_encode($data->pluck('total')); ?>"></div>
+            <script src="{{asset('assets/js/dashboards-analytics.js')}}"></script>
           </div>
         </div>
         <div class="border rounded p-3 mt-2">
@@ -973,107 +973,3 @@
 </div>
 
 @endsection
-
-<script>
-  window.onload = function() {
-    let cardColor, headingColor, labelColor, shadeColor, grayColor;
-    if (isDarkStyle) {
-      cardColor = config.colors_dark.cardColor;
-      labelColor = config.colors_dark.textMuted;
-      headingColor = config.colors_dark.headingColor;
-      shadeColor = 'dark';
-      grayColor = '#5E6692'; // gray color is for stacked bar chart
-    } else {
-      cardColor = config.colors.cardColor;
-      labelColor = config.colors.textMuted;
-      headingColor = config.colors.headingColor;
-      shadeColor = '';
-      grayColor = '#817D8D';
-    }
-
-    const flightReportEl = document.querySelector('#flightReport'),
-      flightReportConfig = {
-        chart: {
-          height: 202,
-          parentHeightOffset: 0,
-          type: 'bar',
-          toolbar: {
-            show: false
-          }
-        },
-        plotOptions: {
-          bar: {
-            barHeight: '60%',
-            columnWidth: '38%',
-            startingShape: 'rounded',
-            endingShape: 'rounded',
-            borderRadius: 4,
-            distributed: true
-          }
-        },
-        grid: {
-          show: false,
-          padding: {
-            top: -30,
-            bottom: 0,
-            left: -10,
-            right: -10
-          }
-        },
-        colors: [
-          config.colors_label.primary,
-          config.colors_label.primary,
-          config.colors_label.primary,
-          config.colors_label.primary,
-          config.colors.primary,
-          config.colors_label.primary,
-          config.colors_label.primary
-        ],
-        dataLabels: {
-          enabled: true
-        },
-        series: [{
-          data: {!!json_encode($data->pluck('total')) !!} //fetch data from MySQL
-        }],
-        legend: {
-          show: false
-        },
-        xaxis: {
-          categories: ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'],
-          axisBorder: {
-            show: false
-          },
-          axisTicks: {
-            show: false
-          },
-          labels: {
-            style: {
-              colors: labelColor,
-              fontSize: '13px',
-              fontFamily: 'Public Sans'
-            }
-          }
-        },
-        yaxis: {
-          labels: {
-            show: false
-          }
-        },
-        tooltip: {
-          enabled: false
-        },
-        responsive: [{
-          breakpoint: 1025,
-          options: {
-            chart: {
-              height: 199
-            }
-          }
-        }]
-      };
-    if (typeof flightReportEl !== undefined && flightReportEl !== null) {
-      const flightReport = new ApexCharts(flightReportEl, flightReportConfig);
-      flightReport.render();
-    }
-  }
-</script>
