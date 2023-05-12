@@ -16,6 +16,7 @@
 @endsection
 
 @section('vendor-script')
+<script src="{{asset('assets/js/dashboards-analytics.js')}}"></script>
 <script src="{{asset('assets/vendor/libs/swiper/swiper.js')}}"></script>
 <script src="{{asset('assets/vendor/libs/apex-charts/apexcharts.js')}}"></script>
 <script src="{{asset('assets/vendor/libs/datatables-bs5/datatables-bootstrap5.js')}}"></script>
@@ -331,7 +332,6 @@
           </div>
           <div class="col-12 col-md-8">
             <div id="flightReport" data-flight-data="<?php echo json_encode($data->pluck('total')); ?>"></div>
-            <script src="{{asset('assets/js/dashboards-analytics.js')}}"></script>
           </div>
         </div>
         <div class="border rounded p-3 mt-2">
