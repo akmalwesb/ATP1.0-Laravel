@@ -380,6 +380,10 @@
           <h5 class="mb-0">Flight Statistic</h5>
           <small class="text-muted">Last on today</small>
         </div>
+        <div>
+        <label for="datePicker">Select a date:</label>
+          <input type="date" id="datePicker">
+        </div>
       </div>
       <div class="card-body">
         <div class="row gap-4 gap-sm-0">
