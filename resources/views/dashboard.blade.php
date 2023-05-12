@@ -304,7 +304,7 @@
     <div class="card h-100">
       <div class="card-header pb-0 d-flex justify-content-between mb-lg-n4">
         <div class="card-title mb-0">
-          <h5 class="mb-0">Flight Planned</h5>
+          <h5 class="mb-1">Flight Planned</h5>
           <small class="text-muted">Weekly Flight Planned Overview</small>
         </div>
         <div class="dropdown">
@@ -377,10 +377,10 @@
     <div class="card h-100">
       <div class="card-header">
         <div class="card-title mb-0">
-          <h5 class="mb-0">Flight Statistic</h5>
+          <h5 class="mb-1">Flight Statistic</h5>
         </div>
         <div class="text-muted">Last on today
-          <input type="date" id="datePicker">
+          <input type="date" id="datePicker" style="float: right">
         </div>
       </div>
       <div class="card-body">
