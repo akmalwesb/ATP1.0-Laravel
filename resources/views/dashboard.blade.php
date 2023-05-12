@@ -160,9 +160,9 @@
     </div>
   </div> -->
   <!--/ Website Analytics -->
-  
+
   <!-- Statistics Card -->
-  <div class="col-xl-8 col-md-6 col-12 mb-4">
+  <!-- <div class="col-xl-8 col-md-6 col-12 mb-4">
     <div class="card card-statistics">
       <div class="card-header">
         <h4 class="card-title">Flight Statistics</h4>
@@ -214,7 +214,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
   <!--/ Statistics Card -->
 
   <!-- Namecard -->
@@ -373,8 +373,65 @@
   </div>
   <!--/ Earning Reports -->
 
+  <!-- Flight Statistic-->
+  <div class="col-lg-6 mb-4">
+    <div class="card h-100">
+      <div class="card-header">
+        <div class="card-title mb-0">
+          <h5 class="mb-0">Flight Statistic</h5>
+          <small class="text-muted">Last on today</small>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="row gap-4 gap-sm-0">
+          <div class="col-12 col-sm-4">
+            <div class="media">
+              <div class="mr-2">
+                <div class="avatar-content">
+                  <img src="assets/images/icons/icons8-clock-96.png" class="position-left" alt="" width="45" height="">
+                </div>
+              </div>
+              <div class="media-body my-auto">
+                <h4 class="font-weight-bolder mb-0"><mark>80888:30</mark></h4>
+                <p class="card-text font-small-3 mb-0">Total AW139 Fleet Hours</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-4">
+            <div class="media">
+              <div class="mr-2">
+                <div class="avatar-content">
+                  <img src="assets/images/icons/icons8-clock-96.png" class="position-left" alt="" width="45" height="">
+                </div>
+              </div>
+              <div class="media-body my-auto">
+                <h4 class="font-weight-bolder mb-0"><mark>80888:30</mark></h4>
+                <p class="card-text font-small-3 mb-0">Total AW139 Flight Number</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-4">
+            <div class="media">
+              <div class="mr-2">
+                <div class="avatar-content">
+                  <img src="assets/images/icons/icons8-clock-96.png" class="position-left" alt="" width="45" height="">
+                </div>
+              </div>
+              <div class="media-body my-auto">
+                <h4 class="font-weight-bolder mb-0"><mark>80888:30</mark></h4>
+                <p class="card-text font-small-3 mb-0">Total number of passenger</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--/ Flight Statistic-->
+
   <!-- Support Tracker -->
-  <div class="col-md-6 mb-4">
+  <!-- <div class="col-md-6 mb-4">
     <div class="card h-100">
       <div class="card-header d-flex justify-content-between pb-0">
         <div class="card-title mb-0">
@@ -428,7 +485,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
   <!--/ Support Tracker -->
 
   <!-- Sales By Country -->
@@ -842,7 +899,7 @@
       <div class="card mb-1">
         <div class="card-header">
           <div class="card-body">
-          <!-- <div class="col-12 col-md-8">
+            <!-- <div class="col-12 col-md-8">
             <div id="weeklyEarningReports"></div>
           </div> -->
           </div>
@@ -854,7 +911,7 @@
       <div class="card mb-1">
         <div class="card-header">
           <div class="card-body">
-          <!-- <div class="col-12 col-md-8">
+            <!-- <div class="col-12 col-md-8">
             <div id="weeklyEarningReports"></div>
           </div> -->
           </div>
@@ -866,7 +923,7 @@
       <div class="card mb-1">
         <div class="card-header">
           <div class="card-body">
-          <!-- <div class="col-12 col-md-8">
+            <!-- <div class="col-12 col-md-8">
             <div id="weeklyEarningReports"></div>
           </div> -->
           </div>
@@ -878,7 +935,7 @@
       <div class="card mb-1">
         <div class="card-header">
           <div class="card-body">
-          <!-- <div class="col-12 col-md-8">
+            <!-- <div class="col-12 col-md-8">
             <div id="weeklyEarningReports"></div>
           </div> -->
           </div>
@@ -890,7 +947,7 @@
       <div class="card mb-1">
         <div class="card-header">
           <div class="card-body">
-          <!-- <div class="col-12 col-md-8">
+            <!-- <div class="col-12 col-md-8">
             <div id="weeklyEarningReports"></div>
           </div> -->
           </div>
@@ -902,7 +959,7 @@
       <div class="card mb-1">
         <div class="card-header">
           <div class="card-body">
-          <!-- <div class="col-12 col-md-8">
+            <!-- <div class="col-12 col-md-8">
             <div id="weeklyEarningReports"></div>
           </div> -->
           </div>
