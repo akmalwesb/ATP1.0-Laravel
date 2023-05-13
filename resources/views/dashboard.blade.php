@@ -379,8 +379,10 @@
         <div class="card-title mb-0">
           <h5 class="mb-1">Flight Statistic</h5>
         </div>
-        <div class="text-muted">Last on today
-          <input type="date" id="datePicker" style="float: right">
+        <div class="text-muted">
+          As on
+          <span id="selectedDateContainer" style="display: inline-block; margin-left: 5px;"></span>
+          <input type="date" id="datepicker" style="float: right;">
         </div>
       </div>
       <div class="card-body">
