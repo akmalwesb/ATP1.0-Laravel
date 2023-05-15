@@ -380,8 +380,7 @@
           <h5 class="mb-1">Flight Statistic</h5>
         </div>
         <div class="text-muted">
-          As on
-          <span id="selectedDateContainer" style="display: inline-block; margin-left: 5px;"></span>
+          <span id="selectedDateContainer" style="display: inline-block;"></span>
           <input type="date" id="datepicker" style="float: right;">
         </div>
       </div>
