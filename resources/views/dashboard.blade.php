@@ -390,7 +390,7 @@
             <div class="media">
               <div class="mr-2">
                 <div class="avatar-content">
-                  <img src="assets/images/icons/icons8-clock-96.png" class="position-left" alt="" width="45" height="">
+                  <img src="assets/img/icons/brands/asana.png" class="position-right" alt="" width="45" height="45">
                 </div>
               </div>
               <div class="media-body my-auto">
@@ -403,7 +403,7 @@
             <div class="media">
               <div class="mr-2">
                 <div class="avatar-content">
-                  <img src="assets/images/icons/icons8-clock-96.png" class="position-left" alt="" width="45" height="">
+                  <img src="assets/img/icons/brands/asana.png" class="position-left" alt="" width="45" height="">
                 </div>
               </div>
               <div class="media-body my-auto">
@@ -416,7 +416,7 @@
             <div class="media">
               <div class="mr-2">
                 <div class="avatar-content">
-                  <img src="assets/images/icons/icons8-clock-96.png" class="position-left" alt="" width="45" height="">
+                  <img src="assets/img/icons/brands/asana.png" class="position-left" alt="" width="45" height="">
                 </div>
               </div>
               <div class="media-body my-auto">
