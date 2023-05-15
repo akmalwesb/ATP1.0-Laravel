@@ -8,6 +8,7 @@
 <link rel="stylesheet" href="{{asset('assets/vendor/libs/datatables-bs5/datatables.bootstrap5.css')}}" />
 <link rel="stylesheet" href="{{asset('assets/vendor/libs/datatables-responsive-bs5/responsive.bootstrap5.css')}}" />
 <link rel="stylesheet" href="{{asset('assets/vendor/libs/datatables-checkboxes-jquery/datatables.checkboxes.css')}}" />
+<link rel="stylesheet" href="assets/vendor/libs/flatpickr/flatpickr.css" />
 @endsection
 
 @section('page-style')
@@ -19,6 +20,7 @@
 <script src="{{asset('assets/vendor/libs/swiper/swiper.js')}}"></script>
 <script src="{{asset('assets/vendor/libs/apex-charts/apexcharts.js')}}"></script>
 <script src="{{asset('assets/vendor/libs/datatables-bs5/datatables-bootstrap5.js')}}"></script>
+<script src="assets/vendor/libs/flatpickr/flatpickr.js"></script>
 @endsection
 
 @section('page-script')
@@ -378,10 +380,13 @@
       <div class="card-header">
         <div class="card-title mb-0">
           <h5 class="mb-1">Flight Statistic</h5>
-        </div>
-        <div class="text-muted">
-          <span id="selectedDateContainer" style="display: inline-block;"></span>
-          <input type="date" id="datepicker" style="float: right;">
+          <div class="d-flex justify-content-between">
+            <span id="selectedDateContainer" class="text-muted" style="display: inline-block;"></span>
+            <div class="form-group d-flex justify-content-between">
+              <label for="flatpickr-range" class="form-label"></label>
+              <input type="text" class="form-control" placeholder="YYYY-MM-DD to YYYY-MM-DD" id="flatpickr-range" />
+            </div>
+          </div>
         </div>
       </div>
       <div class="card-body">
