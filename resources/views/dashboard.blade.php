@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="{{asset('assets/vendor/libs/datatables-bs5/datatables.bootstrap5.css')}}" />
 <link rel="stylesheet" href="{{asset('assets/vendor/libs/datatables-responsive-bs5/responsive.bootstrap5.css')}}" />
 <link rel="stylesheet" href="{{asset('assets/vendor/libs/datatables-checkboxes-jquery/datatables.checkboxes.css')}}" />
-<link rel="stylesheet" href="assets/vendor/libs/flatpickr/flatpickr.css" />
+<link rel="stylesheet" href="{{asset('assets/vendor/libs/flatpickr/flatpickr.css')}}" />
 @endsection
 
 @section('page-style')
@@ -20,7 +20,7 @@
 <script src="{{asset('assets/vendor/libs/swiper/swiper.js')}}"></script>
 <script src="{{asset('assets/vendor/libs/apex-charts/apexcharts.js')}}"></script>
 <script src="{{asset('assets/vendor/libs/datatables-bs5/datatables-bootstrap5.js')}}"></script>
-<script src="assets/vendor/libs/flatpickr/flatpickr.js"></script>
+<script src="{{asset('assets/vendor/libs/flatpickr/flatpickr.js')}}"></script>
 @endsection
 
 @section('page-script')
@@ -30,194 +30,6 @@
 @section('content')
 
 <div class="row">
-  <!-- Website Analytics -->
-  <!-- <div class="col-lg-6 mb-4">
-    <div class="swiper-container swiper-container-horizontal swiper swiper-card-advance-bg" id="swiper-with-pagination-cards">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <div class="row">
-            <div class="col-12">
-              <h5 class="text-white mb-0 mt-2">Website Analytics</h5>
-              <small>Total 28.5% Conversion Rate</small>
-            </div>
-            <div class="row">
-              <div class="col-lg-7 col-md-9 col-12 order-2 order-md-1">
-                <h6 class="text-white mt-0 mt-md-3 mb-3">Traffic</h6>
-                <div class="row">
-                  <div class="col-6">
-                    <ul class="list-unstyled mb-0">
-                      <li class="d-flex mb-4 align-items-center">
-                        <p class="mb-0 fw-semibold me-2 website-analytics-text-bg">28%</p>
-                        <p class="mb-0">Sessions</p>
-                      </li>
-                      <li class="d-flex align-items-center mb-2">
-                        <p class="mb-0 fw-semibold me-2 website-analytics-text-bg">1.2k</p>
-                        <p class="mb-0">Leads</p>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="col-6">
-                    <ul class="list-unstyled mb-0">
-                      <li class="d-flex mb-4 align-items-center">
-                        <p class="mb-0 fw-semibold me-2 website-analytics-text-bg">3.1k</p>
-                        <p class="mb-0">Page Views</p>
-                      </li>
-                      <li class="d-flex align-items-center mb-2">
-                        <p class="mb-0 fw-semibold me-2 website-analytics-text-bg">12%</p>
-                        <p class="mb-0">Conversions</p>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-5 col-md-3 col-12 order-1 order-md-2 my-4 my-md-0 text-center">
-                <img src="{{asset('assets/img/illustrations/card-website-analytics-1.png')}}" alt="Website Analytics" width="170" class="card-website-analytics-img">
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="row">
-            <div class="col-12">
-              <h5 class="text-white mb-0 mt-2">Website Analytics</h5>
-              <small>Total 28.5% Conversion Rate</small>
-            </div>
-            <div class="col-lg-7 col-md-9 col-12 order-2 order-md-1">
-              <h6 class="text-white mt-0 mt-md-3 mb-3">Spending</h6>
-              <div class="row">
-                <div class="col-6">
-                  <ul class="list-unstyled mb-0">
-                    <li class="d-flex mb-4 align-items-center">
-                      <p class="mb-0 fw-semibold me-2 website-analytics-text-bg">12h</p>
-                      <p class="mb-0">Spend</p>
-                    </li>
-                    <li class="d-flex align-items-center mb-2">
-                      <p class="mb-0 fw-semibold me-2 website-analytics-text-bg">127</p>
-                      <p class="mb-0">Order</p>
-                    </li>
-                  </ul>
-                </div>
-                <div class="col-6">
-                  <ul class="list-unstyled mb-0">
-                    <li class="d-flex mb-4 align-items-center">
-                      <p class="mb-0 fw-semibold me-2 website-analytics-text-bg">18</p>
-                      <p class="mb-0">Order Size</p>
-                    </li>
-                    <li class="d-flex align-items-center mb-2">
-                      <p class="mb-0 fw-semibold me-2 website-analytics-text-bg">2.3k</p>
-                      <p class="mb-0">Items</p>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-5 col-md-3 col-12 order-1 order-md-2 my-4 my-md-0 text-center">
-              <img src="{{asset('assets/img/illustrations/card-website-analytics-2.png')}}" alt="Website Analytics" width="170" class="card-website-analytics-img">
-            </div>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="row">
-            <div class="col-12">
-              <h5 class="text-white mb-0 mt-2">Website Analytics</h5>
-              <small>Total 28.5% Conversion Rate</small>
-            </div>
-            <div class="col-lg-7 col-md-9 col-12 order-2 order-md-1">
-              <h6 class="text-white mt-0 mt-md-3 mb-3">Revenue Sources</h6>
-              <div class="row">
-                <div class="col-6">
-                  <ul class="list-unstyled mb-0">
-                    <li class="d-flex mb-4 align-items-center">
-                      <p class="mb-0 fw-semibold me-2 website-analytics-text-bg">268</p>
-                      <p class="mb-0">Direct</p>
-                    </li>
-                    <li class="d-flex align-items-center mb-2">
-                      <p class="mb-0 fw-semibold me-2 website-analytics-text-bg">62</p>
-                      <p class="mb-0">Referral</p>
-                    </li>
-                  </ul>
-                </div>
-                <div class="col-6">
-                  <ul class="list-unstyled mb-0">
-                    <li class="d-flex mb-4 align-items-center">
-                      <p class="mb-0 fw-semibold me-2 website-analytics-text-bg">890</p>
-                      <p class="mb-0">Organic</p>
-                    </li>
-                    <li class="d-flex align-items-center mb-2">
-                      <p class="mb-0 fw-semibold me-2 website-analytics-text-bg">1.2k</p>
-                      <p class="mb-0">Campaign</p>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-5 col-md-3 col-12 order-1 order-md-2 my-4 my-md-0 text-center">
-              <img src="{{asset('assets/img/illustrations/card-website-analytics-3.png')}}" alt="Website Analytics" width="170" class="card-website-analytics-img">
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="swiper-pagination"></div>
-    </div>
-  </div> -->
-  <!--/ Website Analytics -->
-
-  <!-- Statistics Card -->
-  <!-- <div class="col-xl-8 col-md-6 col-12 mb-4">
-    <div class="card card-statistics">
-      <div class="card-header">
-        <h4 class="card-title">Flight Statistics</h4>
-        <div class="d-flex align-items-center">
-          <p class="card-text font-small-2 mr-25 mb-0">As on Thursday , 11 May 2023 </p>
-        </div>
-      </div>
-      <div class="card-body statistics-body">
-        <div class="row">
-          <div class="col-xl-4 col-sm-6 col-12 mb-2 mb-xl-0">
-            <div class="media">
-              <div class="mr-2">
-                <div class="avatar-content">
-                  <img src='assets/images/icons/icons8-clock-96.png' class='position-left' alt='' width='45' height=''>
-                </div>
-              </div>
-              <div class="media-body my-auto">
-                <h4 class="font-weight-bolder mb-0"><mark>80888:30</mark></h4>
-                <p class="card-text font-small-3 mb-0">Total AW139 Fleet Hours</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-4 col-sm-6 col-12 mb-2 mb-xl-0">
-            <div class="media">
-              <div class="mr-2">
-                <div class="avatar-content">
-                  <img src='assets/images/icons/eta.png' class='position-left' alt='' width='40' height=''>
-                </div>
-              </div>
-              <div class="media-body my-auto">
-                <h4 class="font-weight-bolder mb-0"><mark>364770</mark></h4>
-                <p class="card-text font-small-3 mb-0">Total AW139 Flight Number</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-4 col-sm-6 col-12 mb-2 mb-sm-0">
-            <div class="media">
-              <div class="mr-2">
-                <div class="avatar-content">
-                  <img src='assets/images/icons/icons8-traveler-80.png' class='position-left' alt='' width='40' height=''>
-                </div>
-              </div>
-              <div class="media-body my-auto">
-                <h4 class="font-weight-bolder mb-0"><mark>603904</mark></h4>
-                <p class="card-text font-small-3 mb-0">Total number of passenger</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div> -->
-  <!--/ Statistics Card -->
-
   <!-- Namecard -->
   <div class="col-xl-6 col-sm-6 mb-4">
     <div class="card" style='background: linear-gradient(1deg, #03006c, rgb(255 181 97 / 70%));'>
@@ -307,7 +119,7 @@
       <div class="card-header pb-0 d-flex justify-content-between mb-lg-n4">
         <div class="card-title mb-0">
           <h5 class="mb-1">Flight Planned</h5>
-          <small class="text-muted">Weekly Flight Planned Overview</small>
+          <span class="text-muted">Weekly Flight Planned Overview</span>
         </div>
         <div class="dropdown">
           <button class="btn p-0" type="button" id="earningReportsId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -393,7 +205,7 @@
         <div class="row gap-4 gap-sm-0">
           <div class="col-12 col-sm-4">
             <div class="media">
-              <div class="mr-2">
+              <div class="mr-2 mt-5 mb-5 text-center d-flex justify-content-center"> <!-- Added classes "text-center d-flex justify-content-center" here -->
                 <div class="avatar-content">
                   <img src="assets/img/icons/brands/asana.png" class="position-right" alt="" width="45" height="45">
                 </div>
@@ -406,7 +218,7 @@
           </div>
           <div class="col-12 col-sm-4">
             <div class="media">
-              <div class="mr-2">
+              <div class="mr-2 mt-5 mb-5 text-center d-flex justify-content-center"> <!-- Added classes "text-center d-flex justify-content-center" here -->
                 <div class="avatar-content">
                   <img src="assets/img/icons/brands/asana.png" class="position-left" alt="" width="45" height="">
                 </div>
@@ -419,20 +231,20 @@
           </div>
           <div class="col-12 col-sm-4">
             <div class="media">
-              <div class="mr-2">
+              <div class="mr-2 mt-5 mb-5 text-center d-flex justify-content-center"> <!-- Added classes "text-center d-flex justify-content-center" here -->
                 <div class="avatar-content">
                   <img src="assets/img/icons/brands/asana.png" class="position-left" alt="" width="45" height="">
                 </div>
               </div>
               <div class="media-body my-auto">
                 <h4 class="font-weight-bolder mb-0"><mark>80888:30</mark></h4>
-                <p class="card-text font-small-3 mb-0">Total number of passenger</p>
+                <p class="card-text font-small-3 mb-0">Total number of passengers</p>
               </div>
             </div>
           </div>
-
         </div>
       </div>
+
     </div>
   </div>
   <!--/ Flight Statistic-->
