@@ -710,85 +710,111 @@
   </div> -->
   <!--/ Projects table -->
 
-  <!-- Test -->
-  <div class="col-12 col-xl-8 col-sm-12 order-1 order-lg-2 mb-4">
+
+  <!-- Test 2 -->
+  <div class="col-12 col-xl-8 col-sm-12 order-1 order-lg-2 mb-4 accordion">
     <div class="card" style="background-color: transparent; box-shadow: none;">
 
-      <!-- Aircraft Flying Hours for Revenue & Non Revenue Flights -->
-      <div class="card mb-1">
-        <div class="card-header">
-          <div class="card-body">
-            <!-- <div class="col-12 col-md-8">
-            <div id="weeklyEarningReports"></div>
-          </div> -->
+      <div class="accordion-item card">
+        <h2 class="accordion-header">
+          <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#accordionStyle1-1" aria-expanded="false">
+            Revenue & Non Revenue Flying Hours
+          </button>
+        </h2>
+        <div id="accordionStyle1-1" class="accordion-collapse collapse show" data-bs-parent="#accordionStyle1">
+          <div class="accordion-body">
+            Dessert ice cream donut oat cake jelly-o pie sugar plum cheesecake. Bear claw dragée oat cake dragée ice
+            cream
+            halvah tootsie roll. Danish cake oat cake pie macaroon tart donut gummies. Jelly beans candy canes carrot
+            cake.
+            Fruitcake chocolate chupa chups.
           </div>
         </div>
       </div>
-      <!-- Aircraft Flying Hours for Revenue & Non Revenue Flights -->
 
-      <!-- AIRCRAFT FLYING HOURS FOR REVENUE FLIGHTS-->
-      <div class="card mb-1">
-        <div class="card-header">
-          <div class="card-body">
-            <!-- <div class="col-12 col-md-8">
-            <div id="weeklyEarningReports"></div>
-          </div> -->
+      <div class="accordion-item card">
+        <h2 class="accordion-header">
+          <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#accordionStyle1-2" aria-expanded="false">
+            Revenue Flying Hours
+          </button>
+        </h2>
+        <div id="accordionStyle1-2" class="accordion-collapse collapse" data-bs-parent="#accordionStyle2">
+          <div class="accordion-body">
+            Dessert ice cream donut oat cake jelly-o pie sugar plum cheesecake. Bear claw dragée oat cake dragée ice
+            cream
+            halvah tootsie roll. Danish cake oat cake pie macaroon tart donut gummies. Jelly beans candy canes carrot
+            cake.
+            Fruitcake chocolate chupa chups.
           </div>
         </div>
       </div>
-      <!-- AIRCRAFT FLYING HOURS FOR REVENUE FLIGHTS-->
 
-      <!--FLYING HOURS BY COMPANY-->
-      <div class="card mb-1">
-        <div class="card-header">
-          <div class="card-body">
-            <!-- <div class="col-12 col-md-8">
-            <div id="weeklyEarningReports"></div>
-          </div> -->
+      <div class="card accordion-item">
+        <h2 class="accordion-header">
+          <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#accordionStyle1-3" aria-expanded="false">
+            Flying Hours
+          </button>
+        </h2>
+        <div id="accordionStyle1-3" class="accordion-collapse collapse" data-bs-parent="#accordionStyle1">
+          <div class="accordion-body">
+            Oat cake toffee chocolate bar jujubes. Marshmallow brownie lemon drops cheesecake. Bonbon gingerbread
+            marshmallow
+            sweet jelly beans muffin. Sweet roll bear claw candy canes oat cake dragée caramels. Ice cream wafer danish
+            cookie caramels muffin.
           </div>
         </div>
       </div>
-      <!--FLYING HOURS BY COMPANY-->
+      <div class="accordion-item card">
+        <h2 class="accordion-header">
+          <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#accordionStyle1-4" aria-expanded="false">
+            Aircraft Utilisation
+          </button>
+        </h2>
 
-      <!-- AIRCRAFT UTILISATION-->
-      <div class="card mb-1">
-        <div class="card-header">
-          <div class="card-body">
-            <!-- <div class="col-12 col-md-8">
-            <div id="weeklyEarningReports"></div>
-          </div> -->
+        <div id="accordionStyle1-4" class="accordion-collapse collapse" data-bs-parent="#accordionStyle1">
+          <div class="accordion-body">
+            Lemon drops chocolate cake gummies carrot cake chupa chups muffin topping. Sesame snaps icing marzipan gummi
+            bears macaroon dragée danish caramels powder. Bear claw dragée pastry topping soufflé. Wafer gummi bears
+            marshmallow pastry pie.
           </div>
         </div>
       </div>
-      <!-- AIRCRAFT UTILISATION-->
 
-      <!-- AIRCRAFT AVAILABILITY-->
-      <div class="card mb-1">
-        <div class="card-header">
-          <div class="card-body">
-            <!-- <div class="col-12 col-md-8">
-            <div id="weeklyEarningReports"></div>
-          </div> -->
+      <div class="accordion-item card">
+        <h2 class="accordion-header">
+          <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#accordionStyle1-5" aria-expanded="false">
+            Aircraft Availability
+          </button>
+        </h2>
+        <div id="accordionStyle1-5" class="accordion-collapse collapse" data-bs-parent="#accordionStyle1">
+          <div class="accordion-body">
+            Dessert ice cream donut oat cake jelly-o pie sugar plum cheesecake. Bear claw dragée oat cake dragée ice
+            cream
+            halvah tootsie roll. Danish cake oat cake pie macaroon tart donut gummies. Jelly beans candy canes carrot
+            cake.
+            Fruitcake chocolate chupa chups.
           </div>
         </div>
       </div>
-      <!-- AIRCRAFT AVAILABILITY-->
 
-      <!-- AVERAGE FUEL CONSUMPTION-->
-      <div class="card mb-1">
-        <div class="card-header">
-          <div class="card-body">
-            <!-- <div class="col-12 col-md-8">
-            <div id="weeklyEarningReports"></div>
-          </div> -->
+      <div class="accordion-item card active">
+        <h2 class="accordion-header">
+          <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#accordionStyle1-6" aria-expanded="false">
+            Average Fuel Consumption
+          </button>
+        </h2>
+
+        <div id="accordionStyle1-6" class="accordion-collapse collapse" data-bs-parent="#accordionStyle1">
+          <div class="accordion-body">
+            Lemon drops chocolate cake gummies carrot cake chupa chups muffin topping. Sesame snaps icing marzipan gummi
+            bears macaroon dragée danish caramels powder. Bear claw dragée pastry topping soufflé. Wafer gummi bears
+            marshmallow pastry pie.
           </div>
         </div>
       </div>
-      <!-- AVERAGE FUEL CONSUMPTION-->
     </div>
   </div>
-</div>
-<!--/ Test -->
+  <!--/ Test 2 -->
 </div>
 
 @endsection
