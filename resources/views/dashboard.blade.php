@@ -688,36 +688,13 @@
   </div> -->
   <!--/ Source Visit -->
 
-  <!-- Projects table -->
-  <!-- <div class="col-12 col-xl-8 col-sm-12 order-1 order-lg-2 mb-4">
-    <div class="card">
-      <div class="card-datatable table-responsive">
-        <table class="datatables-projects table border-top">
-          <thead>
-            <tr>
-              <th></th>
-              <th></th>
-              <th>Name</th>
-              <th>Leader</th>
-              <th>Team</th>
-              <th class="w-px-200">Status</th>
-              <th>Action</th>
-            </tr>
-          </thead>
-        </table>
-      </div>
-    </div>
-  </div> -->
-  <!--/ Projects table -->
-
-
   <!-- Test 2 -->
-  <div class="col-12 col-xl-8 col-sm-12 order-1 order-lg-2 mb-4 accordion">
+  <!-- <div class="col-12 col-xl-8 col-sm-12 order-1 order-lg-2 mb-4 accordion">
     <div class="card" style="background-color: transparent; box-shadow: none;">
 
       <div class="accordion-item card">
         <h2 class="accordion-header">
-          <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#accordionStyle1-1" aria-expanded="false">
+          <button type="button" class="accordion-button" data-bs-toggle="collapse" data-bs-target="#accordionStyle1-1" aria-expanded="false">
             Revenue & Non Revenue Flying Hours
           </button>
         </h2>
@@ -813,8 +790,102 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
   <!--/ Test 2 -->
+
+  <!-- test 3 -->
+  <div class="col-12 col-xl-8 col-sm-12 order-1 order-lg-2 mb-4 accordion" id="accordionStyle1">
+    <div class="accordion-item card">
+      <h2 class="accordion-header">
+        <button type="button" class="accordion-button" data-bs-toggle="collapse" data-bs-target="#accordionStyle1-1" aria-expanded="true">
+          Revenue & Non Revenue Flying Hours
+        </button>
+      </h2>
+
+      <div id="accordionStyle1-1" class="accordion-collapse collapse show" data-bs-parent="#accordionStyle1">
+        <div class="accordion-body" id="chart">
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item card">
+      <h2 class="accordion-header">
+        <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#accordionStyle1-2" aria-expanded="false">
+          Revenue Flying Hours
+        </button>
+      </h2>
+      <div id="accordionStyle1-2" class="accordion-collapse collapse" data-bs-parent="#accordionStyle1">
+        <div class="accordion-body">
+          test
+        </div>
+      </div>
+    </div>
+
+    <div class="card accordion-item active">
+      <h2 class="accordion-header">
+        <button type="button" class="accordion-button" data-bs-toggle="collapse" data-bs-target="#accordionStyle1-3" aria-expanded="false">
+          Flying Hours
+        </button>
+      </h2>
+      <div id="accordionStyle1-3" class="accordion-collapse collapse" data-bs-parent="#accordionStyle1">
+        <div class="accordion-body">
+          Oat cake toffee chocolate bar jujubes. Marshmallow brownie lemon drops cheesecake. Bonbon gingerbread
+          marshmallow
+          sweet jelly beans muffin. Sweet roll bear claw candy canes oat cake dragée caramels. Ice cream wafer danish
+          cookie caramels muffin.
+        </div>
+      </div>
+    </div>
+
+    <div class="card accordion-item active">
+      <h2 class="accordion-header">
+        <button type="button" class="accordion-button" data-bs-toggle="collapse" data-bs-target="#accordionStyle1-4" aria-expanded="false">
+          Aircraft Utilisation
+        </button>
+      </h2>
+      <div id="accordionStyle1-4" class="accordion-collapse collapse" data-bs-parent="#accordionStyle1">
+        <div class="accordion-body">
+          Oat cake toffee chocolate bar jujubes. Marshmallow brownie lemon drops cheesecake. Bonbon gingerbread
+          marshmallow
+          sweet jelly beans muffin. Sweet roll bear claw candy canes oat cake dragée caramels. Ice cream wafer danish
+          cookie caramels muffin.
+        </div>
+      </div>
+    </div>
+
+    <div class="card accordion-item active">
+      <h2 class="accordion-header">
+        <button type="button" class="accordion-button" data-bs-toggle="collapse" data-bs-target="#accordionStyle1-5" aria-expanded="false">
+          Aircraft Availability
+        </button>
+      </h2>
+      <div id="accordionStyle1-5" class="accordion-collapse collapse" data-bs-parent="#accordionStyle1">
+        <div class="accordion-body">
+          Oat cake toffee chocolate bar jujubes. Marshmallow brownie lemon drops cheesecake. Bonbon gingerbread
+          marshmallow
+          sweet jelly beans muffin. Sweet roll bear claw candy canes oat cake dragée caramels. Ice cream wafer danish
+          cookie caramels muffin.
+        </div>
+      </div>
+    </div>
+
+    <div class="card accordion-item active">
+      <h2 class="accordion-header">
+        <button type="button" class="accordion-button" data-bs-toggle="collapse" data-bs-target="#accordionStyle1-6" aria-expanded="false">
+          Average Fuel Consumption
+        </button>
+      </h2>
+      <div id="accordionStyle1-6" class="accordion-collapse collapse" data-bs-parent="#accordionStyle1">
+        <div class="accordion-body">
+          Oat cake toffee chocolate bar jujubes. Marshmallow brownie lemon drops cheesecake. Bonbon gingerbread
+          marshmallow
+          sweet jelly beans muffin. Sweet roll bear claw candy canes oat cake dragée caramels. Ice cream wafer danish
+          cookie caramels muffin.
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--/ test 3 -->
 </div>
 
 @endsection
