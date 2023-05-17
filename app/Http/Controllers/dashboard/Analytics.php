@@ -14,16 +14,6 @@ class Analytics extends Controller
 {
   public function index()
   {
-//     $fleet_hour = flight_done_general::select("time_to_sec('flights_done_general.Total_Flight_Duration') as second")
-//     ->join('aircraftlist','aircraftlist.AircraftReg', 'flights_done_general.Aircraft_Reg')
-//     ->where('flights_done_general.Date_Of_Flight','2014-04-02')
-//     ->where('flights_done_general.Deleted', 'No')
-//     ->where('aircraftlist.ICAO_Type','A139')
-//     ->first();
-
-// //  $third_month_name = Carbon::now()->format('F');
-
-//  dd($fleet_hour);
     return redirect('/login');
   }
 
@@ -97,11 +87,11 @@ class Analytics extends Controller
       ->get();
 
       //total fleet hour
-      $fleet_hour = flight_done_general::join('aircraftlist','aircraftlist.AircraftReg', 'flights_done_general.Aircraft_Reg')
-      ->where('flights_done_general.Date_Of_Flight','2014-04-02')
-      ->where('flights_done_general.Deleted', 'No')
-      ->where('aircraftlist.ICAO_Type','A139')
-      ->sum("time_to_sec('flights_done_general.Total_Flight_Duration') as second");
+      // $fleet_hour = flight_done_general::join('aircraftlist','aircraftlist.AircraftReg', 'flights_done_general.Aircraft_Reg')
+      // ->where('flights_done_general.Date_Of_Flight','2014-04-02')
+      // ->where('flights_done_general.Deleted', 'No')
+      // ->where('aircraftlist.ICAO_Type','A139')
+      // ->sum("time_to_sec('flights_done_general.Total_Flight_Duration') as second");
 
       // total flight number
       $flight_number = flight_done_general::select('flights_done_general.FlightID')
