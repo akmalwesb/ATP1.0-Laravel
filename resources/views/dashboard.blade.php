@@ -224,7 +224,7 @@
                 </div>
               </div>
               <div class="media-body my-auto">
-                <h4 class="font-weight-bolder mb-0"><mark>80888:30</mark></h4>
+                <h4 class="font-weight-bolder mb-0"><mark>{{$flight_number}}</mark></h4>
                 <p class="card-text font-small-3 mb-0">Total AW139 Flight Number</p>
               </div>
             </div>
@@ -237,7 +237,7 @@
                 </div>
               </div>
               <div class="media-body my-auto">
-                <h4 class="font-weight-bolder mb-0"><mark>80888:30</mark></h4>
+                <!-- <h4 class="font-weight-bolder mb-0"><mark>{{$total_passenger}}</mark></h4> -->
                 <p class="card-text font-small-3 mb-0">Total number of passengers</p>
               </div>
             </div>
