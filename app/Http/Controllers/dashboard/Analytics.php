@@ -112,7 +112,7 @@ class Analytics extends Controller
         'first_month_name' => $first_month_name,
         'second_month_name' => $second_month_name,
         'third_month_name' => $third_month_name,
-        'fleet_hour' =>$fleet_hour,
+        // 'fleet_hour' =>$fleet_hour,
         'flight_number' =>$flight_number,
         'total_passenger' => $total_passenger,
       ]

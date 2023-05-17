@@ -97,7 +97,7 @@
   <!--/ Sales Overview -->
 
   <!-- Revenue Generated -->
-  <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
+  <div class="col-lg-3 col-md-6 mb-4">
     <div class="card">
       <div class="card-body pb-0">
         <div class="card-icon">
@@ -187,8 +187,8 @@
   <!--/ Earning Reports -->
 
   <!-- Flight Statistic-->
-  <div class="col-lg-6 mb-4">
-    <div class="card h-100">
+  <div class="col-lg-6 col-sm-6 mb-4">
+    <div class="card">
       <div class="card-header">
         <div class="card-title mb-0">
           <h5 class="mb-1">Flight Statistic</h5>
@@ -196,7 +196,7 @@
             <span id="selectedDateContainer" class="text-muted" style="display: inline-block;"></span>
             <div class="form-group d-flex justify-content-between">
               <label for="flatpickr-range" class="form-label"></label>
-              <input type="text" class="form-control" placeholder="YYYY-MM-DD to YYYY-MM-DD" id="flatpickr-range" />
+              <input type="text" class="form-control form-control-sm" placeholder="DD-MM-YYYY to DD-MM-YYYY" id="flatpickr-range" />
             </div>
           </div>
         </div>
@@ -249,194 +249,6 @@
   </div>
   <!--/ Flight Statistic-->
 
-  <!-- Support Tracker -->
-  <!-- <div class="col-md-6 mb-4">
-    <div class="card h-100">
-      <div class="card-header d-flex justify-content-between pb-0">
-        <div class="card-title mb-0">
-          <h5 class="mb-0">Support Tracker</h5>
-          <small class="text-muted">Last 7 Days</small>
-        </div>
-        <div class="dropdown">
-          <button class="btn p-0" type="button" id="supportTrackerMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <i class="ti ti-dots-vertical ti-sm text-muted"></i>
-          </button>
-          <div class="dropdown-menu dropdown-menu-end" aria-labelledby="supportTrackerMenu">
-            <a class="dropdown-item" href="javascript:void(0);">View More</a>
-            <a class="dropdown-item" href="javascript:void(0);">Delete</a>
-          </div>
-        </div>
-      </div>
-      <div class="card-body">
-        <div class="row">
-          <div class="col-12 col-sm-4 col-md-12 col-lg-4">
-            <div class="mt-lg-4 mt-lg-2 mb-lg-4 mb-2 pt-1">
-              <h1 class="mb-0">164</h1>
-              <p class="mb-0">Total Tickets</p>
-            </div>
-            <ul class="p-0 m-0">
-              <li class="d-flex gap-3 align-items-center mb-lg-3 pt-2 pb-1">
-                <div class="badge rounded bg-label-primary p-1"><i class="ti ti-ticket ti-sm"></i></div>
-                <div>
-                  <h6 class="mb-0 text-nowrap">New Tickets</h6>
-                  <small class="text-muted">142</small>
-                </div>
-              </li>
-              <li class="d-flex gap-3 align-items-center mb-lg-3 pb-1">
-                <div class="badge rounded bg-label-info p-1"><i class="ti ti-circle-check ti-sm"></i></div>
-                <div>
-                  <h6 class="mb-0 text-nowrap">Open Tickets</h6>
-                  <small class="text-muted">28</small>
-                </div>
-              </li>
-              <li class="d-flex gap-3 align-items-center pb-1">
-                <div class="badge rounded bg-label-warning p-1"><i class="ti ti-clock ti-sm"></i></div>
-                <div>
-                  <h6 class="mb-0 text-nowrap">Response Time</h6>
-                  <small class="text-muted">1 Day</small>
-                </div>
-              </li>
-            </ul>
-          </div>
-          <div class="col-12 col-sm-8 col-md-12 col-lg-8">
-            <div id="supportTracker"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div> -->
-  <!--/ Support Tracker -->
-
-  <!-- Sales By Country -->
-  <!-- <div class="col-xl-4 col-md-6 mb-4">
-    <div class="card h-100">
-      <div class="card-header d-flex justify-content-between">
-        <div class="card-title mb-0">
-          <h5 class="m-0 me-2">Sales by Countries</h5>
-          <small class="text-muted">Monthly Sales Overview</small>
-        </div>
-        <div class="dropdown">
-          <button class="btn p-0" type="button" id="salesByCountry" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <i class="ti ti-dots-vertical ti-sm text-muted"></i>
-          </button>
-          <div class="dropdown-menu dropdown-menu-end" aria-labelledby="salesByCountry">
-            <a class="dropdown-item" href="javascript:void(0);">Download</a>
-            <a class="dropdown-item" href="javascript:void(0);">Refresh</a>
-            <a class="dropdown-item" href="javascript:void(0);">Share</a>
-          </div>
-        </div>
-      </div>
-      <div class="card-body">
-        <ul class="p-0 m-0">
-          <li class="d-flex align-items-center mb-4">
-            <img src="{{asset('assets/svg/flags/us.svg')}}" alt="User" class="rounded-circle me-3" width="34">
-            <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
-              <div class="me-2">
-                <div class="d-flex align-items-center">
-                  <h6 class="mb-0 me-1">$8,567k</h6>
-
-                </div>
-                <small class="text-muted">United states</small>
-              </div>
-              <div class="user-progress">
-                <p class="text-success fw-semibold mb-0">
-                  <i class='ti ti-chevron-up'></i>
-                  25.8%
-                </p>
-              </div>
-            </div>
-          </li>
-          <li class="d-flex align-items-center mb-4">
-            <img src="{{asset('assets/svg/flags/br.svg')}}" alt="User" class="rounded-circle me-3" width="34">
-            <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
-              <div class="me-2">
-                <div class="d-flex align-items-center">
-                  <h6 class="mb-0 me-1">$2,415k</h6>
-                </div>
-                <small class="text-muted">Brazil</small>
-              </div>
-              <div class="user-progress">
-                <p class="text-danger fw-semibold mb-0">
-                  <i class='ti ti-chevron-down'></i>
-                  6.2%
-                </p>
-              </div>
-            </div>
-          </li>
-          <li class="d-flex align-items-center mb-4">
-            <img src="{{asset('assets/svg/flags/in.svg')}}" alt="User" class="rounded-circle me-3" width="34">
-            <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
-              <div class="me-2">
-                <div class="d-flex align-items-center">
-                  <h6 class="mb-0 me-1">$865k</h6>
-                </div>
-                <small class="text-muted">India</small>
-              </div>
-              <div class="user-progress">
-                <p class="text-success fw-semibold">
-                  <i class='ti ti-chevron-up'></i>
-                  12.4%
-                </p>
-              </div>
-            </div>
-          </li>
-          <li class="d-flex align-items-center mb-4">
-            <img src="{{asset('assets/svg/flags/au.svg')}}" alt="User" class="rounded-circle me-3" width="34">
-            <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
-              <div class="me-2">
-                <div class="d-flex align-items-center">
-                  <h6 class="mb-0 me-1">$745k</h6>
-                </div>
-                <small class="text-muted">Australia</small>
-              </div>
-              <div class="user-progress">
-                <p class="text-danger fw-semibold mb-0">
-                  <i class='ti ti-chevron-down'></i>
-                  11.9%
-                </p>
-              </div>
-            </div>
-          </li>
-          <li class="d-flex align-items-center mb-4">
-            <img src="{{asset('assets/svg/flags/fr.svg')}}" alt="User" class="rounded-circle me-3" width="34">
-            <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
-              <div class="me-2">
-                <div class="d-flex align-items-center">
-                  <h6 class="mb-0 me-1">$45</h6>
-                </div>
-                <small class="text-muted">France</small>
-              </div>
-              <div class="user-progress">
-                <p class="text-success fw-semibold mb-0">
-                  <i class='ti ti-chevron-up'></i>
-                  16.2%
-                </p>
-              </div>
-            </div>
-          </li>
-          <li class="d-flex align-items-center">
-            <img src="{{asset('assets/svg/flags/cn.svg')}}" alt="User" class="rounded-circle me-3" width="34">
-            <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
-              <div class="me-2">
-                <div class="d-flex align-items-center">
-                  <h6 class="mb-0 me-1">$12k</h6>
-                </div>
-                <small class="text-muted">China</small>
-              </div>
-              <div class="user-progress">
-                <p class="text-success fw-semibold mb-0">
-                  <i class='ti ti-chevron-up'></i>
-                  14.8%
-                </p>
-              </div>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div> -->
-  <!--/ Sales By Country -->
-
   <!-- Total Earning -->
   <div class="col-12 col-xl-4 mb-4 col-md-6">
     <div class="card">
@@ -484,315 +296,6 @@
   </div>
   <!--/ Total Earning -->
 
-  <!-- Monthly Campaign State -->
-  <!-- <div class="col-xl-4 col-md-6 mb-4">
-    <div class="card h-100">
-      <div class="card-header d-flex justify-content-between">
-        <div class="card-title mb-0">
-          <h5 class="mb-0">Monthly Campaign State</h5>
-          <small class="text-muted">8.52k Social Visiters</small>
-        </div>
-        <div class="dropdown">
-          <button class="btn p-0" type="button" id="MonthlyCampaign" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <i class="ti ti-dots-vertical ti-sm text-muted"></i>
-          </button>
-          <div class="dropdown-menu dropdown-menu-end" aria-labelledby="MonthlyCampaign">
-            <a class="dropdown-item" href="javascript:void(0);">Refresh</a>
-            <a class="dropdown-item" href="javascript:void(0);">Download</a>
-            <a class="dropdown-item" href="javascript:void(0);">View All</a>
-          </div>
-        </div>
-      </div>
-      <div class="card-body">
-        <ul class="p-0 m-0">
-          <li class="mb-4 pb-1 d-flex justify-content-between align-items-center">
-            <div class="badge bg-label-success rounded p-2"><i class="ti ti-mail ti-sm"></i></div>
-            <div class="d-flex justify-content-between w-100 flex-wrap">
-              <h6 class="mb-0 ms-3">Emails</h6>
-              <div class="d-flex">
-                <p class="mb-0 fw-semibold">12,346</p>
-                <p class="ms-3 text-success mb-0">0.3%</p>
-              </div>
-            </div>
-          </li>
-          <li class="mb-4 pb-1 d-flex justify-content-between align-items-center">
-            <div class="badge bg-label-info rounded p-2"><i class="ti ti-link ti-sm"></i></div>
-            <div class="d-flex justify-content-between w-100 flex-wrap">
-              <h6 class="mb-0 ms-3">Opened</h6>
-              <div class="d-flex">
-                <p class="mb-0 fw-semibold">8,734</p>
-                <p class="ms-3 text-success mb-0">2.1%</p>
-              </div>
-            </div>
-          </li>
-          <li class="mb-4 pb-1 d-flex justify-content-between align-items-center">
-            <div class="badge bg-label-warning rounded p-2"><i class="ti ti-click ti-sm"></i></div>
-            <div class="d-flex justify-content-between w-100 flex-wrap">
-              <h6 class="mb-0 ms-3">Clicked</h6>
-              <div class="d-flex">
-                <p class="mb-0 fw-semibold">967</p>
-                <p class="ms-3 text-success mb-0">1.4%</p>
-              </div>
-            </div>
-          </li>
-          <li class="mb-4 pb-1 d-flex justify-content-between align-items-center">
-            <div class="badge bg-label-primary rounded p-2"><i class="ti ti-users ti-sm"></i></div>
-            <div class="d-flex justify-content-between w-100 flex-wrap">
-              <h6 class="mb-0 ms-3">Subscribe</h6>
-              <div class="d-flex">
-                <p class="mb-0 fw-semibold">345</p>
-                <p class="ms-3 text-success mb-0">8.5k</p>
-              </div>
-            </div>
-          </li>
-          <li class="mb-4 pb-1 d-flex justify-content-between align-items-center">
-            <div class="badge bg-label-secondary rounded p-2"><i class="ti ti-alert-triangle ti-sm text-body"></i></div>
-            <div class="d-flex justify-content-between w-100 flex-wrap">
-              <h6 class="mb-0 ms-3">Complaints</h6>
-              <div class="d-flex">
-                <p class="mb-0 fw-semibold">10</p>
-                <p class="ms-3 text-success mb-0">1.5%</p>
-              </div>
-            </div>
-          </li>
-          <li class="d-flex justify-content-between align-items-center">
-            <div class="badge bg-label-danger rounded p-2"><i class="ti ti-ban ti-sm"></i></div>
-            <div class="d-flex justify-content-between w-100 flex-wrap">
-              <h6 class="mb-0 ms-3">Unsubscribe</h6>
-              <div class="d-flex">
-                <p class="mb-0 fw-semibold">86</p>
-                <p class="ms-3 text-success mb-0">0.8%</p>
-              </div>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div> -->
-  <!--/ Monthly Campaign State -->
-
-  <!-- Source Visit -->
-  <!-- <div class="col-xl-4 col-md-6 order-1 order-lg-1 mb-4">
-    <div class="card">
-      <div class="card-header d-flex justify-content-between">
-        <div class="card-title mb-0">
-          <h5 class="mb-0">Source Visits</h5>
-          <small class="text-muted">38.4k Visitors</small>
-        </div>
-        <div class="dropdown">
-          <button class="btn p-0" type="button" id="sourceVisits" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <i class="ti ti-dots-vertical ti-sm text-muted"></i>
-          </button>
-          <div class="dropdown-menu dropdown-menu-end" aria-labelledby="sourceVisits">
-            <a class="dropdown-item" href="javascript:void(0);">Refresh</a>
-            <a class="dropdown-item" href="javascript:void(0);">Download</a>
-            <a class="dropdown-item" href="javascript:void(0);">View All</a>
-          </div>
-        </div>
-      </div>
-      <div class="card-body">
-        <ul class="list-unstyled mb-0">
-          <li class="mb-3 pb-1">
-            <div class="d-flex align-items-start">
-              <div class="badge bg-label-secondary p-2 me-3 rounded"><i class="ti ti-shadow ti-sm"></i></div>
-              <div class="d-flex justify-content-between w-100 flex-wrap gap-2">
-                <div class="me-2">
-                  <h6 class="mb-0">Direct Source</h6>
-                  <small class="text-muted">Direct link click</small>
-                </div>
-                <div class="d-flex align-items-center">
-                  <p class="mb-0">1.2k</p>
-                  <div class="ms-3 badge bg-label-success">+4.2%</div>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="mb-3 pb-1">
-            <div class="d-flex align-items-start">
-              <div class="badge bg-label-secondary p-2 me-3 rounded"><i class="ti ti-globe ti-sm"></i></div>
-              <div class="d-flex justify-content-between w-100 flex-wrap gap-2">
-                <div class="me-2">
-                  <h6 class="mb-0">Social Network</h6>
-                  <small class="text-muted">Social Channels</small>
-                </div>
-                <div class="d-flex align-items-center">
-                  <p class="mb-0">31.5k</p>
-                  <div class="ms-3 badge bg-label-success">+8.2%</div>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="mb-3 pb-1">
-            <div class="d-flex align-items-start">
-              <div class="badge bg-label-secondary p-2 me-3 rounded"><i class="ti ti-mail ti-sm"></i></div>
-              <div class="d-flex justify-content-between w-100 flex-wrap gap-2">
-                <div class="me-2">
-                  <h6 class="mb-0">Email Newsletter</h6>
-                  <small class="text-muted">Mail Campaigns</small>
-                </div>
-                <div class="d-flex align-items-center">
-                  <p class="mb-0">893</p>
-                  <div class="ms-3 badge bg-label-success">+2.4%</div>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="mb-3 pb-1">
-            <div class="d-flex align-items-start">
-              <div class="badge bg-label-secondary p-2 me-3 rounded"><i class="ti ti-external-link ti-sm"></i></div>
-              <div class="d-flex justify-content-between w-100 flex-wrap gap-2">
-                <div class="me-2">
-                  <h6 class="mb-0">Referrals</h6>
-                  <small class="text-muted">Impact Radius Visits</small>
-                </div>
-                <div class="d-flex align-items-center">
-                  <p class="mb-0">342</p>
-                  <div class="ms-3 badge bg-label-danger">-0.4%</div>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="mb-3 pb-1">
-            <div class="d-flex align-items-start">
-              <div class="badge bg-label-secondary p-2 me-3 rounded"><i class="ti ti-discount-2 ti-sm"></i></div>
-              <div class="d-flex justify-content-between w-100 flex-wrap gap-2">
-                <div class="me-2">
-                  <h6 class="mb-0">ADVT</h6>
-                  <small class="text-muted">Google ADVT</small>
-                </div>
-                <div class="d-flex align-items-center">
-                  <p class="mb-0">2.15k</p>
-                  <div class="ms-3 badge bg-label-success">+9.1%</div>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="mb-2">
-            <div class="d-flex align-items-start">
-              <div class="badge bg-label-secondary p-2 me-3 rounded"><i class="ti ti-star ti-sm"></i></div>
-              <div class="d-flex justify-content-between w-100 flex-wrap gap-2">
-                <div class="me-2">
-                  <h6 class="mb-0">Other</h6>
-                  <small class="text-muted">Many Sources</small>
-                </div>
-                <div class="d-flex align-items-center">
-                  <p class="mb-0">12.5k</p>
-                  <div class="ms-3 badge bg-label-success">+6.2%</div>
-                </div>
-              </div>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div> -->
-  <!--/ Source Visit -->
-
-  <!-- Test 2 -->
-  <!-- <div class="col-12 col-xl-8 col-sm-12 order-1 order-lg-2 mb-4 accordion">
-    <div class="card" style="background-color: transparent; box-shadow: none;">
-
-      <div class="accordion-item card">
-        <h2 class="accordion-header">
-          <button type="button" class="accordion-button" data-bs-toggle="collapse" data-bs-target="#accordionStyle1-1" aria-expanded="false">
-            Revenue & Non Revenue Flying Hours
-          </button>
-        </h2>
-        <div id="accordionStyle1-1" class="accordion-collapse collapse show" data-bs-parent="#accordionStyle1">
-          <div class="accordion-body">
-            Dessert ice cream donut oat cake jelly-o pie sugar plum cheesecake. Bear claw dragée oat cake dragée ice
-            cream
-            halvah tootsie roll. Danish cake oat cake pie macaroon tart donut gummies. Jelly beans candy canes carrot
-            cake.
-            Fruitcake chocolate chupa chups.
-          </div>
-        </div>
-      </div>
-
-      <div class="accordion-item card">
-        <h2 class="accordion-header">
-          <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#accordionStyle1-2" aria-expanded="false">
-            Revenue Flying Hours
-          </button>
-        </h2>
-        <div id="accordionStyle1-2" class="accordion-collapse collapse" data-bs-parent="#accordionStyle2">
-          <div class="accordion-body">
-            Dessert ice cream donut oat cake jelly-o pie sugar plum cheesecake. Bear claw dragée oat cake dragée ice
-            cream
-            halvah tootsie roll. Danish cake oat cake pie macaroon tart donut gummies. Jelly beans candy canes carrot
-            cake.
-            Fruitcake chocolate chupa chups.
-          </div>
-        </div>
-      </div>
-
-      <div class="card accordion-item">
-        <h2 class="accordion-header">
-          <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#accordionStyle1-3" aria-expanded="false">
-            Flying Hours
-          </button>
-        </h2>
-        <div id="accordionStyle1-3" class="accordion-collapse collapse" data-bs-parent="#accordionStyle1">
-          <div class="accordion-body">
-            Oat cake toffee chocolate bar jujubes. Marshmallow brownie lemon drops cheesecake. Bonbon gingerbread
-            marshmallow
-            sweet jelly beans muffin. Sweet roll bear claw candy canes oat cake dragée caramels. Ice cream wafer danish
-            cookie caramels muffin.
-          </div>
-        </div>
-      </div>
-      <div class="accordion-item card">
-        <h2 class="accordion-header">
-          <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#accordionStyle1-4" aria-expanded="false">
-            Aircraft Utilisation
-          </button>
-        </h2>
-
-        <div id="accordionStyle1-4" class="accordion-collapse collapse" data-bs-parent="#accordionStyle1">
-          <div class="accordion-body">
-            Lemon drops chocolate cake gummies carrot cake chupa chups muffin topping. Sesame snaps icing marzipan gummi
-            bears macaroon dragée danish caramels powder. Bear claw dragée pastry topping soufflé. Wafer gummi bears
-            marshmallow pastry pie.
-          </div>
-        </div>
-      </div>
-
-      <div class="accordion-item card">
-        <h2 class="accordion-header">
-          <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#accordionStyle1-5" aria-expanded="false">
-            Aircraft Availability
-          </button>
-        </h2>
-        <div id="accordionStyle1-5" class="accordion-collapse collapse" data-bs-parent="#accordionStyle1">
-          <div class="accordion-body">
-            Dessert ice cream donut oat cake jelly-o pie sugar plum cheesecake. Bear claw dragée oat cake dragée ice
-            cream
-            halvah tootsie roll. Danish cake oat cake pie macaroon tart donut gummies. Jelly beans candy canes carrot
-            cake.
-            Fruitcake chocolate chupa chups.
-          </div>
-        </div>
-      </div>
-
-      <div class="accordion-item card active">
-        <h2 class="accordion-header">
-          <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#accordionStyle1-6" aria-expanded="false">
-            Average Fuel Consumption
-          </button>
-        </h2>
-
-        <div id="accordionStyle1-6" class="accordion-collapse collapse" data-bs-parent="#accordionStyle1">
-          <div class="accordion-body">
-            Lemon drops chocolate cake gummies carrot cake chupa chups muffin topping. Sesame snaps icing marzipan gummi
-            bears macaroon dragée danish caramels powder. Bear claw dragée pastry topping soufflé. Wafer gummi bears
-            marshmallow pastry pie.
-          </div>
-        </div>
-      </div>
-    </div>
-  </div> -->
-  <!--/ Test 2 -->
-
   <!-- test 3 -->
   <div class="col-12 col-xl-8 col-sm-12 order-1 order-lg-2 mb-4 accordion" id="accordionStyle1">
     <div class="accordion-item card">
@@ -803,7 +306,7 @@
       </h2>
 
       <div id="accordionStyle1-1" class="accordion-collapse collapse show" data-bs-parent="#accordionStyle1">
-        <div class="accordion-body" id="chart">
+        <div class="accordion-body" id="chart1">
         </div>
       </div>
     </div>
@@ -823,7 +326,7 @@
 
     <div class="card accordion-item active">
       <h2 class="accordion-header">
-        <button type="button" class="accordion-button" data-bs-toggle="collapse" data-bs-target="#accordionStyle1-3" aria-expanded="false">
+        <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#accordionStyle1-3" aria-expanded="false">
           Flying Hours
         </button>
       </h2>
@@ -839,7 +342,7 @@
 
     <div class="card accordion-item active">
       <h2 class="accordion-header">
-        <button type="button" class="accordion-button" data-bs-toggle="collapse" data-bs-target="#accordionStyle1-4" aria-expanded="false">
+        <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#accordionStyle1-4" aria-expanded="false">
           Aircraft Utilisation
         </button>
       </h2>
@@ -855,7 +358,7 @@
 
     <div class="card accordion-item active">
       <h2 class="accordion-header">
-        <button type="button" class="accordion-button" data-bs-toggle="collapse" data-bs-target="#accordionStyle1-5" aria-expanded="false">
+        <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#accordionStyle1-5" aria-expanded="false">
           Aircraft Availability
         </button>
       </h2>
@@ -871,7 +374,7 @@
 
     <div class="card accordion-item active">
       <h2 class="accordion-header">
-        <button type="button" class="accordion-button" data-bs-toggle="collapse" data-bs-target="#accordionStyle1-6" aria-expanded="false">
+        <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#accordionStyle1-6" aria-expanded="false">
           Average Fuel Consumption
         </button>
       </h2>
